@@ -1,0 +1,190 @@
+body {
+  
+  
+    font-family: Arial, sans-serif;
+    background-image: url("media/img/temporal-background.png");
+    background-size: cover;
+    background-repeat: initial;
+    background-attachment: fixed; 
+    width: 100%;
+    height: 100%;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.925); /* Fondo negro semitransparente */
+    z-index: -1; /* Coloca la capa detrás del contenido */
+
+}
+
+
+
+
+
+    /* Estilos para las partículas */
+    #particles-js {
+       
+        width: 100%;
+        height: 100%;
+        
+        z-index: -1; /* Asegura que estén detrás de los demás elementos */
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+    }
+
+    .transparent-h2 {
+        
+        background-color: transparent;
+        color: #c2c2c2; /* Cambia el color del texto según tus preferencias */
+        text-align: center; /* Centrar el texto */
+         /* Añadir espacio alrededor del texto para mejorar la legibilidad */
+font-size: 3rem;
+padding:7% 0 0 0;
+    }
+.card-img-custom {
+    height: 100px; /* Establece la altura deseada para las imágenes */
+    object-fit: cover; /* Escala la imagen para cubrir toda la altura sin distorsión */
+}
+
+
+/* Estilos para el componente del reproductor de audio */
+.audio-player {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.audio-player h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Estilos para el componente del reproductor de audio */
+.audio-player {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px;
+  
+    text-align: center;
+    border: none;
+    border-radius: 0; /* Borde sin redondear */
+
+}
+
+.audio-player h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Estilos para el reproductor de audio */
+audio {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+/* Estilizar los controles del reproductor de audio */
+audio::-webkit-media-controls-panel {
+    background-color: transparent;
+    color: #fff; /* Color de los controles de audio en blanco */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider {
+    color: #fff; /* Color de los controles de audio en blanco */
+}
+
+audio::-webkit-media-controls {
+    display: flex;
+    align-items: center;
+}
+
+audio::-webkit-media-controls-play-button {
+    font-size: 24px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    width: 100px;
+}
+
+audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+    background-color: #fff; /* Color del botón del control de volumen en blanco */
+}
+
+audio::-webkit-media-controls-volume-slider::-webkit-slider-runnable-track {
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+.card-img-top:hover {
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse sobre la imagen */
+    opacity: 0.7; /* Cambia la opacidad de la imagen en el hover */
+}
+
+/* Agrega CSS personalizado para ajustar el tamaño de la imagen en el lightbox */
+.lightbox-image {
+    max-width: 100%;
+    max-height: 90vh; /* Ajusta el alto máximo según tus necesidades */
+}
+
+
+
+
+
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
+  }
+ 
+  
+ 
+  
+  /* Estilo personalizado para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  /* Estilo para el track (fondo) de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background-color: #fff; /* Color de fondo de la barra de desplazamiento */
+    border-radius: 10px; /* Radio de borde para hacerlo redondeado */
+  }
+  
+  /* Estilo para el thumb (manija) de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la manija de la barra de desplazamiento */
+    border-radius: 10px; /* Radio de borde para hacerlo redondeado */
+  }
+  
+  /* Estilo para el thumb (manija) de la barra de desplazamiento cuando se pasa el ratón por encima */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color de la manija cuando se pasa el ratón por encima */
+  }
+  
+  
+  
+  
+
+
+.content {
+    /* Estilos para tu contenido principal */
+
+
+}
