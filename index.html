@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Multimedia Profesional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Lain Aesthetic Overlays -->
+    <div class="scanlines-overlay"></div>
+    <!-- Partículas -->
+    <div id="particles-js"></div>
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#inicio">
+            <img src="logo.png" alt="Logo Julián Rojas" class="logo-nav"> Julián Steven Rojas Aya
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#disenos">Diseños</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#3d">3D</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#audiovisual">Audiovisual</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#web">Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="inicio" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="hero-title">Creatividad & Innovación Digital</h1>
+                <p class="hero-subtitle">Diseño gráfico, multimedia y desarrollo web en perfecta armonía</p>
+
+                <!-- Video para vista móvil -->
+                <div class="d-lg-none my-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://drive.google.com/file/d/1ivrfWdA-HhQJpbww01WwqTpHcSShLvzc/preview?mute=1" 
+                                title="Video principal (móvil)" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="hero-cta d-grid gap-2 d-sm-flex">
+                    <a href="#disenos" class="btn btn-primary">Ver Trabajos</a>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">Contactar</button>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://drive.google.com/file/d/1ivrfWdA-HhQJpbww01WwqTpHcSShLvzc/preview?mute=1" 
+                            title="Video principal (escritorio)" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Diseños Gráficos -->
+<section id="disenos" class="section">
+    <div class="container">
+        <h2 class="section-title">Diseños Gráficos</h2>
+        <p class="section-subtitle">Una colección de mis trabajos de diseño más recientes y creativos</p>
+        
+        <div class="row">
+            <!-- Imágenes en una sola columna en móvil -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/logo-parejas.png" class="card-img-top" alt="Logo Parejas" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/logo-parejas.png" data-fancybox="gallery-1" data-caption="Logo Parejas" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Logo Parejas</h5>
+                        <p class="card-text">Diseño de identidad corporativa para terapia de parejas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/evento-parejas.png" class="card-img-top" alt="Evento Parejas" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/evento-parejas.png" data-fancybox="gallery-1" data-caption="Evento Parejas" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Evento Parejas</h5>
+                        <p class="card-text">Diseño promocional para evento de terapia de parejas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/hoy-es-el-dia.png" class="card-img-top" alt="Hoy es el Día" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/hoy-es-el-dia.png" data-fancybox="gallery-1" data-caption="Hoy es el Día" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Hoy es el Día</h5>
+                        <p class="card-text">Diseño motivacional para campaña inspiracional</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/programate.png" class="card-img-top" alt="Programate" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/programate.png" data-fancybox="gallery-1" data-caption="Programate" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Programate</h5>
+                        <p class="card-text">Diseño para programa de educación en tecnología</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Segunda fila de diseños -->
+        <div class="row mt-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/taller-carismatico.png" class="card-img-top" alt="Taller Carismático" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/taller-carismatico.png" data-fancybox="gallery-1" data-caption="Taller Carismático" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Taller Carismático</h5>
+                        <p class="card-text">Diseño para taller de desarrollo personal</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/casa-jesus.png" class="card-img-top" alt="Casa Jesús" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/casa-jesus.png" data-fancybox="gallery-1" data-caption="Casa Jesús" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Casa Jesús</h5>
+                        <p class="card-text">Identidad visual para centro de retiros espirituales</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/tesoro.png" class="card-img-top" alt="Tesoro" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/tesoro.png" data-fancybox="gallery-1" data-caption="Tesoro" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Tesoro</h5>
+                        <p class="card-text">Diseño para aplicación de finanzas personales</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/pan-palabra.png" class="card-img-top" alt="Pan Palabra" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/pan-palabra.png" data-fancybox="gallery-1" data-caption="Pan Palabra" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Pan Palabra</h5>
+                        <p class="card-text">Diseño para blog de reflexiones espirituales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="#proyectos" class="btn btn-outline-light">Ver más proyectos <i class="fas fa-arrow-down ms-2"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Proyectos Web -->
+<section id="web" class="section">
+    <div class="container">
+        <h2 class="section-title">Proyectos Web Destacados</h2>
+        <p class="section-subtitle">Sitios en los que he trabajado, aportando diseño, desarrollo y estrategia digital</p>
+        
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://escueladeaviacion.co/" target="_blank" class="web-project-card">
+                    <div class="web-project">
+                        <i class="fas fa-plane-departure"></i>
+                        <h5>Escuela de Aviación</h5>
+                        <p>Formación para volar alto</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://sandramilenarivera.com/" target="_blank" class="web-project-card">
+                    <div class="web-project">
+                        <i class="fas fa-paint-brush"></i>
+                        <h5>Sandra Milena Rivera</h5>
+                        <p>Arte y expresión personal</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://ihack.red/" target="_blank" class="web-project-card">
+                    <div class="web-project">
+                        <i class="fas fa-shield-alt"></i>
+                        <h5>iHack Red</h5>
+                        <p>Ciberseguridad y privacidad</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://www.toponenutrition.com/" target="_blank" class="web-project-card">
+                    <div class="web-project">
+                        <i class="fas fa-dumbbell"></i>
+                        <h5>Top One Nutrition</h5>
+                        <p>Rendimiento y bienestar</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://wappy.com.co/" target="_blank" class="web-project-card">
+                    <div class="web-project">
+                        <i class="fas fa-paw"></i>
+                        <h5>Wappy</h5>
+                        <p>Peluquería para perros a domicilio</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://turntabledealer.com/" target="_blank" class="web-project-card">
+                    <div class="web-project">
+                        <i class="fas fa-record-vinyl"></i>
+                        <h5>Turntable Dealer</h5>
+                        <p>Pasión por el vinilo</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Proyectos Arquitectónicos -->
+<section id="proyectos" class="section bg-dark">
+    <div class="container">
+        <h2 class="section-title">Proyectos Arquitectónicos</h2>
+        <p class="section-subtitle">Visualización y representación de espacios arquitectónicos con el más alto nivel de detalle</p>
+        
+        <!-- Video Arquitectónico Principal -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div class="ratio ratio-16x9" style="border: 1px solid var(--primary-color);">
+                    <iframe src="https://drive.google.com/file/d/1sS4EcSouLakW9DFoSlSfQaAtWJ9blnEe/preview" allowfullscreen loading="lazy" title="Video de arquitectura principal"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="portfolio-card h-100">
+                    <div class="card-img-container">
+                        <img src="media/img/1-Fachada-norte-2023.jpg" class="card-img-top" alt="Fachada Norte" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/1-Fachada-norte-2023.jpg" data-fancybox="gallery-2" data-caption="Fachada Norte" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Fachada Norte</h5>
+                        <p class="card-text">Diseño arquitectónico moderno con enfoque en la integración visual</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 col-sm-6 mb-4">
+                        <div class="portfolio-card">
+                            <div class="card-img-container">
+                                <img src="media/img/5-Entrada principal-2023.png" class="card-img-top" alt="Entrada Principal" loading="lazy">
+                                <div class="card-overlay">
+                                    <a href="media/img/5-Entrada principal-2023.png" data-fancybox="gallery-2" data-caption="Entrada Principal" class="btn btn-sm btn-primary">Ampliar</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h5 class="card-title">Entrada Principal</h5>
+                                <p class="card-text">Diseño de acceso con elementos contemporáneos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-4">
+                        <div class="portfolio-card">
+                            <div class="card-img-container">
+                                <img src="media/img/3-Fachada occidental-2023.png" class="card-img-top" alt="Fachada Occidental" loading="lazy">
+                                <div class="card-overlay">
+                                    <a href="media/img/3-Fachada occidental-2023.png" data-fancybox="gallery-2" data-caption="Fachada Occidental" class="btn btn-sm btn-primary">Ampliar</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h5 class="card-title">Fachada Occidental</h5>
+                                <p class="card-text">Perspectiva lateral con juego de volúmenes y texturas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-4">
+                        <div class="portfolio-card">
+                            <div class="card-img-container">
+                                <img src="media/img/2-Entrada 4-2023.png" class="card-img-top" alt="Entrada 4" loading="lazy">
+                                <div class="card-overlay">
+                                    <a href="media/img/2-Entrada 4-2023.png" data-fancybox="gallery-2" data-caption="Entrada 4" class="btn btn-sm btn-primary">Ampliar</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h5 class="card-title">Entrada Secundaria</h5>
+                                <p class="card-text">Acceso complementario con diseño minimalista</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-4">
+                        <div class="portfolio-card">
+                            <div class="card-img-container">
+                                <img src="media/img/4-Fachada Sur j-2023.png" class="card-img-top" alt="Fachada Sur" loading="lazy">
+                                <div class="card-overlay">
+                                    <a href="media/img/4-Fachada Sur j-2023.png" data-fancybox="gallery-2" data-caption="Fachada Sur" class="btn btn-sm btn-primary">Ampliar</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h5 class="card-title">Fachada Sur</h5>
+                                <p class="card-text">Perspectiva posterior con integración al entorno</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección 3D -->
+<section id="3d" class="section">
+    <div class="container">
+        <h2 class="section-title">Modelado y Renderizado 3D</h2>
+        <p class="section-subtitle">Exploración de formas, texturas y luces a través de la creación tridimensional.</p>
+        
+        <div class="row justify-content-center center-on-lg">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                       <img src="media/img/3d/Greymon.png" class="card-img-top" alt="Modelo 3D de Greymon" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/3d/Greymon.png" data-fancybox="gallery-3d" data-caption="Greymon - Modelado de Personaje" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Greymon</h5>
+                        <p class="card-text">Modelado y texturizado de personaje inspirado en la icónica serie Digimon.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/3d/isabelle.png" class="card-img-top" alt="Modelo 3D de Isabelle" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/3d/isabelle.png" data-fancybox="gallery-3d" data-caption="Isabelle - Modelado de Personaje" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Isabelle</h5>
+                        <p class="card-text">Recreación 3D del personaje Isabelle de la saga de videojuegos Animal Crossing.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/3d/Metalgreymon house.png" class="card-img-top" alt="Modelo 3D de MetalGreymon" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/3d/Metalgreymon house.png" data-fancybox="gallery-3d" data-caption="MetalGreymon - Modelado de Personaje" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">MetalGreymon</h5>
+                        <p class="card-text">Modelado detallado de la forma cibernética de Greymon, enfocado en partes mecánicas.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sección Audiovisual -->
+<section id="audiovisual" class="section">
+    <div class="container">
+        <h2 class="section-title">Portafolio Audiovisual</h2>
+        <p class="section-subtitle">Producciones en video donde combino creatividad, técnica y narrativa visual</p>
+        
+        <div class="row g-4 mt-4">
+            <div class="col-12 col-md-4">
+                <div class="portfolio-card">
+                    <div class="ratio ratio-16x9">
+                        <video src="media/img/nuevos/bep.mp4" class="w-100" controls preload="metadata"></video>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">BEP - Video Corporativo</h5>
+                        <p class="card-text">Producción audiovisual para marca de tecnología</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="portfolio-card">
+                    <div class="ratio ratio-16x9">
+                        <video src="media/img/nuevos/trailer.mp4" class="w-100" controls preload="metadata"></video>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Trailer Cinematográfico</h5>
+                        <p class="card-text">Trailer para proyecto cinematográfico independiente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="portfolio-card">
+                    <div class="ratio ratio-16x9">
+                        <video src="media/img/nuevos/futbol.mp4" class="w-100" controls preload="metadata"></video>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Cobertura Deportiva</h5>
+                        <p class="card-text">Producción para evento deportivo profesional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12 col-lg-6 mb-5">
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <h3 class="mb-4"><i class="fas fa-headphones me-3"></i>Producciones Musicales</h3>
+                        
+                        <div class="audio-player">
+                            <h4 class="audio-title"><i class="fas fa-music"></i>A-gain</h4>
+                            <audio controls class="w-100">
+                                <source src="media/audio/A-GAIN.mp3" type="audio/mpeg">
+                                Tu navegador no admite la reproducción de audio.
+                            </audio>
+                        </div>
+                        
+                        <div class="audio-player">
+                            <h4 class="audio-title"><i class="fas fa-music"></i>Spherall</h4>
+                            <audio controls class="w-100">
+                                <source src="media/audio/Spherall.mp3" type="audio/mpeg">
+                                Tu navegador no admite la reproducción de audio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <div class="portfolio-card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/p7a3X03zruY" allowfullscreen loading="lazy" title="The Last Torrent - Banda Sonora"></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">The Last Torrent</h5>
+                        <p class="card-text">Banda sonora original para proyecto cinematográfico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Galería Creativa -->
+<section class="section bg-dark">
+    <div class="container">
+        <h2 class="section-title">Galería Creativa</h2>
+        <p class="section-subtitle">Selección de piezas gráficas con estilos variados y propuestas únicas</p>
+        
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/nuevos/gladiators.png" class="card-img-top" alt="Gladiators" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/nuevos/gladiators.png" data-fancybox="gallery-3" data-caption="Gladiators" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Gladiators</h5>
+                        <p class="card-text">Diseño para equipo deportivo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/nuevos/hypefestival.png" class="card-img-top" alt="Hypefestival" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/nuevos/hypefestival.png" data-fancybox="gallery-3" data-caption="Hypefestival" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Hypefestival</h5>
+                        <p class="card-text">Identidad para festival musical</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/nuevos/parchadoxx.png" class="card-img-top" alt="Parchadoxx" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/nuevos/parchadoxx.png" data-fancybox="gallery-3" data-caption="Parchadoxx" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Parchadoxx</h5>
+                        <p class="card-text">Diseño para marca de ropa urbana</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/nuevos/prototype.png" class="card-img-top" alt="Prototype" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/nuevos/prototype.png" data-fancybox="gallery-3" data-caption="Prototype" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Prototype</h5>
+                        <p class="card-text">Diseño para empresa de tecnología</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/nuevos/rave.png" class="card-img-top" alt="Rave" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/nuevos/rave.png" data-fancybox="gallery-3" data-caption="Rave" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Rave</h5>
+                        <p class="card-text">Diseño para evento de música electrónica</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="portfolio-card">
+                    <div class="card-img-container">
+                        <img src="media/img/nuevos/topnutrion.png" class="card-img-top" alt="Top Nutrition" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="media/img/nuevos/topnutrion.png" data-fancybox="gallery-3" data-caption="Top Nutrition" class="btn btn-sm btn-primary">Ampliar</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="card-title">Top Nutrition</h5>
+                        <p class="card-text">Diseño para marca de suplementos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Catálogo Interactivo -->
+<section class="section bg-dark">
+    <div class="container">
+        <h2 class="section-title">Catálogo Interactivo</h2>
+        <p class="section-subtitle">Visualiza directamente el documento en línea, sin necesidad de descargas</p>
+        <div class="catalog-container">
+            <div class="ratio ratio-16x9">
+                <iframe src="media/img/nuevos/catalogo2025.pdf" allowfullscreen loading="lazy" title="Catálogo Interactivo 2025"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contacto">
+    <div class="container text-center">
+        <h3 class="mb-4">Conectemos</h3>
+        <p class="mb-4">Si te ha gustado mi trabajo o tienes una idea en mente, no dudes en contactarme.</p>
+
+        <p class="mt-4 mb-0">© 2025 Portafolio Multimedia Profesional. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Modal de Contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel"><i class="fas fa-address-card me-2"></i>Mis Datos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>¡Gracias por tu interés! Aquí tienes mis datos para que podamos ponernos en contacto.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="fas fa-envelope me-3"></i>
+                        <a href="mailto:jr7julian@gmail.com">jr7julian@gmail.com</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-phone-alt me-3"></i>
+                        <a href="tel:+573224394883">322 439 4883</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Botón volver arriba -->
+    <a href="#inicio" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    
+    <script>
+        // Inicializar Fancybox
+        Fancybox.bind("[data-fancybox]", {
+            Thumbs: {
+                autoStart: true,
+            },
+            Toolbar: {
+                display: {
+                    left: [],
+                    middle: [],
+                    right: ["close"],
+                },
+            },
+        });
+        
+        // Configuración de partículas
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#6c63ff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#6c63ff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "grab" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+        
+        // Esperar a que el DOM esté completamente cargado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Botón volver arriba
+            window.addEventListener('scroll', function() {
+                const backToTop = document.querySelector('.back-to-top');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+            
+            // Smooth scroll para enlaces de navegación
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                        return;
+                    }
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const yOffset = -70; // Desplazamiento para la barra de navegación fija
+                        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                        window.scrollTo({top: y, behavior: 'smooth'});
+                    }
+                });
+            });
+        });
+        
+   
+    </script>
+</body>
+</html>
