@@ -762,29 +762,7 @@
             }
         }
 
-        /* === Repartir tarjetas como un maso de cartas === */
-        .row .portfolio-card {
-            opacity: 0;
-        }
-
-        .row.dealt .portfolio-card {
-            opacity: 1;
-            animation: card-deal 0.45s ease-out forwards;
-            animation-delay: var(--d, 0ms);
-        }
-
-        @keyframes card-deal {
-            from {
-                opacity: 0;
-                transform: translateY(14px) scale(0.97);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        /* Sin movimiento reducido: tarjetas visibles de inmediato */
+/* Sin movimiento reducido: el resto de animaciones se apaga */
         @media (prefers-reduced-motion: reduce) {
             .row .portfolio-card {
                 opacity: 1;

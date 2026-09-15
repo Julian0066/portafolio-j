@@ -765,31 +765,6 @@
 
     <!-- Animaciones de aparición al hacer scroll -->
     <script>
-        // Repartir tarjetas como un maso de cartas
-        const dealGroups = document.querySelectorAll('.row');
-        const dealObserver = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                const cards = entry.target.querySelectorAll('.portfolio-card');
-                if (cards.length === 0) return;
-                cards.forEach((card, i) => {
-                    card.style.setProperty('--d', (i * 60) + 'ms');
-                });
-                entry.target.classList.add('dealt');
-                dealObserver.unobserve(entry.target);
-            });
-        }, { threshold: 0.12 }) : null;
-
-        dealGroups.forEach(row => {
-            if (row.querySelector('.portfolio-card') && !row.parentElement.closest('.row')) {
-                if (dealObserver) {
-                    dealObserver.observe(row);
-                } else {
-                    row.classList.add('dealt');
-                }
-            }
-        });
-
         // Aparición general
         const revealEls = document.querySelectorAll('.web-project, .audio-player, .section-title');
         const revealObserver = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {
