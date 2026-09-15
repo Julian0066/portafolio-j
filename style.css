@@ -438,6 +438,38 @@
             transform: translateY(0);
         }
         
+        /* Habilidades y servicios */
+        .skill-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-badges .badge {
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--light-color);
+            font-family: 'Share Tech Mono', monospace;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            transition: var(--transition);
+        }
+        
+        .skill-badges .badge:hover {
+            background: var(--primary-color);
+            color: var(--dark-color);
+        }
+        
+        .services-list li {
+            padding: 8px 0;
+            color: rgba(248, 249, 250, 0.8);
+        }
+        
+        .services-list i {
+            color: var(--primary-color);
+        }
+
         /* Responsive */
         @media (max-width: 992px) {
             .hero-title {
