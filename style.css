@@ -569,6 +569,20 @@
             .section-title {
                 font-size: 2rem;
             }
+
+            .ticker {
+                padding: 10px 0;
+            }
+
+            .ticker-track span {
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+            }
+
+            .scroll-indicator {
+                margin-top: 2rem;
+                font-size: 1.2rem;
+            }
         }
 
         /* Solución para centrar columnas cuando no ocupan todo el ancho */
@@ -668,8 +682,8 @@
             height: 3px;
             width: 0;
             z-index: 12000;
-            background: linear-gradient(90deg, #00a8e8, #6c63ff, #6200ff);
-            box-shadow: 0 0 8px rgba(108, 99, 255, 0.6);
+            background: #ffffff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
         }
 
         /* Indicador de scroll en el hero */
@@ -755,18 +769,18 @@
 
         .row.dealt .portfolio-card {
             opacity: 1;
-            animation: card-deal 0.55s cubic-bezier(0.25, 1.4, 0.5, 1) forwards;
+            animation: card-deal 0.45s ease-out forwards;
             animation-delay: var(--d, 0ms);
         }
 
         @keyframes card-deal {
             from {
                 opacity: 0;
-                transform: translateX(-70px) translateY(24px) rotate(-10deg) scale(0.88);
+                transform: translateY(14px) scale(0.97);
             }
             to {
                 opacity: 1;
-                transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+                transform: translateY(0) scale(1);
             }
         }
 

@@ -773,7 +773,7 @@
                 const cards = entry.target.querySelectorAll('.portfolio-card');
                 if (cards.length === 0) return;
                 cards.forEach((card, i) => {
-                    card.style.setProperty('--d', (i * 90) + 'ms');
+                    card.style.setProperty('--d', (i * 60) + 'ms');
                 });
                 entry.target.classList.add('dealt');
                 dealObserver.unobserve(entry.target);
