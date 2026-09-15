@@ -365,6 +365,16 @@
             border-top: 1px solid var(--primary-color);
         }
         
+        footer a {
+            color: var(--light-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        footer a:hover {
+            color: var(--primary-color);
+        }
+        
         .social-links {
             display: flex;
             justify-content: center;
