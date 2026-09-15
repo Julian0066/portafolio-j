@@ -7,7 +7,9 @@ diseño gráfico, modelado 3D, producción audiovisual, campañas Meta Ads y des
 
 ## Características
 
-- Diseño oscuro con estética Lain (scanlines sutiles, partículas, fuente pixel).
+- Diseño oscuro con estética Lain (scanlines sutiles, esfera 3D interactiva, fuente pixel).
+- Fondo 3D interactivo en Three.js que responde al mouse.
+- Cursor personalizado, cinta informativa animada, barra de progreso de scroll y tarjetas con inclinación 3D.
 - Secciones: Sobre Mí, Diseños, Proyectos Web, Proyectos Arquitectónicos, 3D, Audiovisual, Meta Ads y Catálogo.
 - Galerías con Fancybox, videos locales, reproductores de audio y PDF embebido.
 - Contacto por correo, teléfono y WhatsApp.

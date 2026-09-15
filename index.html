@@ -23,8 +23,12 @@
 <body>
     <!-- Lain Aesthetic Overlays -->
     <div class="scanlines-overlay"></div>
-    <!-- Partículas -->
-    <div id="particles-js"></div>
+    <!-- Barra de progreso de scroll -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <!-- Cursor personalizado -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <!-- Fondo interactivo 3D -->
+    <canvas id="three-bg"></canvas>
 <!-- Navegación -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
@@ -99,6 +103,22 @@
         </div>
     </div>
 </section>
+
+<!-- Cinta informativa -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+        <span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+        <span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+    </div>
+</div>
 
 <!-- Sobre Mí -->
 <section id="sobre-mi" class="section bg-dark">
@@ -760,7 +780,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     
     <script>
@@ -778,45 +798,110 @@
             },
         });
         
-        // Configuración de partículas
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#6c63ff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5, random: true },
-                size: { value: 3, random: true },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#6c63ff",
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: "none",
-                    random: true,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false
+        // Fondo 3D interactivo (Three.js)
+        (function() {
+            const canvas = document.getElementById('three-bg');
+            if (!canvas || typeof THREE === 'undefined') return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+            try {
+                const scene = new THREE.Scene();
+                const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 2000);
+                camera.position.z = 600;
+
+                const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                renderer.setSize(window.innerWidth, window.innerHeight);
+
+                const group = new THREE.Group();
+                scene.add(group);
+
+                // Nube de puntos
+                const isMobile = window.innerWidth < 768;
+                const count = isMobile ? 600 : 1300;
+                const positions = new Float32Array(count * 3);
+                for (let i = 0; i < count; i++) {
+                    positions[i * 3] = (Math.random() - 0.5) * 1000;
+                    positions[i * 3 + 1] = (Math.random() - 0.5) * 1000;
+                    positions[i * 3 + 2] = (Math.random() - 0.5) * 1000;
                 }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: { enable: true, mode: "grab" },
-                    onclick: { enable: true, mode: "push" },
-                    resize: true
-                },
-                modes: {
-                    grab: { distance: 140, line_linked: { opacity: 1 } },
-                    push: { particles_nb: 4 }
+                const geom = new THREE.BufferGeometry();
+                geom.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+                const mat = new THREE.PointsMaterial({
+                    color: 0x6c63ff,
+                    size: 1.7,
+                    transparent: true,
+                    opacity: 0.8,
+                    blending: THREE.AdditiveBlending
+                });
+                group.add(new THREE.Points(geom, mat));
+
+                // Esfera alámbrica central
+                const wire = new THREE.Mesh(
+                    new THREE.IcosahedronGeometry(240, 1),
+                    new THREE.MeshBasicMaterial({
+                        color: 0x00a8e8,
+                        wireframe: true,
+                        transparent: true,
+                        opacity: 0.22
+                    })
+                );
+                group.add(wire);
+
+                let mouseX = 0, mouseY = 0, targetX = 0, targetY = 0;
+                document.addEventListener('mousemove', function (e) {
+                    targetX = (e.clientX / window.innerWidth - 0.5) * 2;
+                    targetY = (e.clientY / window.innerHeight - 0.5) * 2;
+                });
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    mouseX += (targetX - mouseX) * 0.05;
+                    mouseY += (targetY - mouseY) * 0.05;
+                    group.rotation.y += 0.002 + mouseX * 0.003;
+                    group.rotation.x += 0.001 + mouseY * 0.002;
+                    camera.position.x += (targetX * 60 - camera.position.x) * 0.05;
+                    camera.position.y += (-targetY * 40 - camera.position.y) * 0.05;
+                    camera.lookAt(scene.position);
+                    renderer.render(scene, camera);
                 }
-            },
-            retina_detect: true
-        });
+                animate();
+
+                window.addEventListener('resize', function () {
+                    camera.aspect = window.innerWidth / window.innerHeight;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize(window.innerWidth, window.innerHeight);
+                });
+            } catch (err) {
+                // Si no hay WebGL, el fondo simplemente no se muestra
+            }
+        })();
+
+        // Cursor personalizado
+        (function() {
+            const glow = document.getElementById('cursorGlow');
+            if (!glow) return;
+            if (!window.matchMedia('(pointer: fine)').matches) return;
+
+            let x = window.innerWidth / 2, y = window.innerHeight / 2, gx = x, gy = y;
+            document.addEventListener('mousemove', function (e) {
+                x = e.clientX;
+                y = e.clientY;
+            });
+
+            function loop() {
+                gx += (x - gx) * 0.2;
+                gy += (y - gy) * 0.2;
+                glow.style.transform = 'translate(' + gx + 'px, ' + gy + 'px) translate(-50%, -50%) rotate(45deg)';
+                requestAnimationFrame(loop);
+            }
+            loop();
+
+            document.querySelectorAll('a, button, .portfolio-card, .web-project').forEach(function (el) {
+                el.addEventListener('mouseenter', function () { glow.classList.add('hover'); });
+                el.addEventListener('mouseleave', function () { glow.classList.remove('hover'); });
+            });
+        })();
         
         // Esperar a que el DOM esté completamente cargado
         document.addEventListener('DOMContentLoaded', function() {
@@ -890,6 +975,32 @@
                     link.classList.toggle('active-link', link.getAttribute('href') === '#' + current);
                 });
             });
+
+            // Barra de progreso de scroll
+            const scrollProgress = document.getElementById('scrollProgress');
+            const updateProgress = function () {
+                const doc = document.documentElement;
+                const scrollable = doc.scrollHeight - doc.clientHeight;
+                const p = scrollable > 0 ? (doc.scrollTop / scrollable) : 0;
+                scrollProgress.style.width = (p * 100) + '%';
+            };
+            window.addEventListener('scroll', updateProgress);
+            updateProgress();
+
+            // Inclinación 3D en tarjetas
+            if (window.matchMedia('(pointer: fine)').matches) {
+                document.querySelectorAll('.portfolio-card').forEach(card => {
+                    card.addEventListener('mousemove', function (e) {
+                        const rect = card.getBoundingClientRect();
+                        const px = (e.clientX - rect.left) / rect.width - 0.5;
+                        const py = (e.clientY - rect.top) / rect.height - 0.5;
+                        card.style.transform = 'perspective(900px) rotateX(' + (-py * 7) + 'deg) rotateY(' + (px * 7) + 'deg)';
+                    });
+                    card.addEventListener('mouseleave', function () {
+                        card.style.transform = '';
+                    });
+                });
+            }
         });
         
    
