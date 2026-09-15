@@ -96,7 +96,6 @@
             width: 34px;
             height: 34px;
             object-fit: cover;
-            border: 1px solid var(--secondary-color);
             margin-right: 10px;
         }
         
@@ -440,13 +439,13 @@
         /* Efectos de animación */
         .fade-in {
             opacity: 0;
-            transform: translateY(20px) rotate(var(--tilt, 0deg));
+            transform: translateY(20px);
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
         
         .fade-in.visible {
             opacity: 1;
-            transform: translateY(0) rotate(var(--tilt, 0deg));
+            transform: translateY(0);
         }
         
         /* Habilidades y servicios */
@@ -749,28 +748,32 @@
             }
         }
 
-        /* === Estilo "maso de cartas" === */
-        .portfolio-card {
-            transform: rotate(var(--tilt, 0deg));
-            box-shadow:
-                0 0 0 1px rgba(0, 168, 232, 0.25),
-                2px 2px 0 rgba(0, 168, 232, 0.16),
-                5px 5px 0 rgba(0, 168, 232, 0.10),
-                8px 8px 0 rgba(0, 168, 232, 0.06);
-            transition: border-color var(--transition), box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        /* === Repartir tarjetas como un maso de cartas === */
+        .row .portfolio-card {
+            opacity: 0;
         }
 
-        .portfolio-card:hover {
-            transform: rotate(0deg) scale(1.02);
-            transform-origin: center bottom;
-            box-shadow:
-                0 18px 30px rgba(0, 0, 0, 0.55),
-                0 0 28px rgba(98, 0, 255, 0.45);
+        .row.dealt .portfolio-card {
+            opacity: 1;
+            animation: card-deal 0.55s cubic-bezier(0.25, 1.4, 0.5, 1) forwards;
+            animation-delay: var(--d, 0ms);
         }
 
-        /* Reduce el revuelo de rotaciones en pantallas pequeñas */
-        @media (max-width: 576px) {
-            .portfolio-card {
-                transform: none;
+        @keyframes card-deal {
+            from {
+                opacity: 0;
+                transform: translateX(-70px) translateY(24px) rotate(-10deg) scale(0.88);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+            }
+        }
+
+        /* Sin movimiento reducido: tarjetas visibles de inmediato */
+        @media (prefers-reduced-motion: reduce) {
+            .row .portfolio-card {
+                opacity: 1;
+                animation: none;
             }
         }
