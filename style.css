@@ -8,6 +8,11 @@
             --transition: all 0.15s ease;
         }
         
+        html {
+            scroll-padding-top: 80px;
+            scroll-behavior: smooth;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -59,13 +64,12 @@
             /* ... (código de ruido omitido por brevedad, pero la idea está aquí) */
         }
 
-        /* Fondo interactivo */
-        #three-bg {
+        /* Partículas */
+        #particles-js {
             position: fixed;
             width: 100%;
             height: 100%;
             z-index: -1;
-            pointer-events: none;
         }
         
         /* Navegación */
@@ -88,7 +92,13 @@
             align-items: center;
         }
 
-        .logo-nav { display: none; } /* Ocultamos el logo para un look más minimalista */
+        .logo-nav {
+            width: 34px;
+            height: 34px;
+            object-fit: cover;
+            border: 1px solid var(--secondary-color);
+            margin-right: 10px;
+        }
         
         .nav-link {
             color: rgba(255, 255, 255, 0.8) !important;
@@ -682,6 +692,37 @@
             height: 56px;
             border-color: #6200ff;
             box-shadow: 0 0 12px rgba(98, 0, 255, 0.6);
+        }
+
+        @media (pointer: coarse) {
+            .cursor-glow {
+                display: none;
+            }
+        }
+
+        /* Indicador de scroll en el hero */
+        .scroll-indicator {
+            display: inline-block;
+            margin-top: 2.5rem;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            animation: bounce-down 2s ease infinite;
+        }
+
+        .scroll-indicator:hover {
+            color: var(--secondary-color);
+        }
+
+        @keyframes bounce-down {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        /* Enfoque accesible */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #6c63ff;
+            outline-offset: 2px;
         }
 
         /* Cinta informativa */
