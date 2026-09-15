@@ -9,7 +9,7 @@ diseño gráfico, modelado 3D, producción audiovisual, campañas Meta Ads y des
 
 - Diseño oscuro con estética Lain (scanlines sutiles, fondo de partículas interactivo, fuente pixel).
 - Fondo de partículas sutil que reacciona al mouse.
-- Cursor personalizado, cinta informativa animada, barra de progreso de scroll y tarjetas con inclinación 3D.
+- Cinta informativa animada, barra de progreso de scroll y tarjetas con estilo "maso de cartas".
 - Secciones: Sobre Mí, Diseños, Proyectos Web, Proyectos Arquitectónicos, 3D, Audiovisual, Meta Ads y Catálogo.
 - Galerías con Fancybox, videos locales, reproductores de audio y PDF embebido.
 - Contacto por correo, teléfono y WhatsApp.
