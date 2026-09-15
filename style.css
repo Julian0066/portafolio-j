@@ -647,12 +647,19 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: var(--secondary-color);
+            background: #ffffff;
             border: 2px solid var(--dark-color);
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-color);
+            background: #ffffff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+        }
+
+        /* Firefox */
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: #ffffff var(--dark-color);
         }
 
         /* Estilo de selección de texto */
