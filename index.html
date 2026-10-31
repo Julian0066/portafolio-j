@@ -27,7 +27,7 @@
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <div id="particles-js" aria-hidden="true"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#inicio">
                 <img src="logo.png" alt="Logo Julián Rojas" class="logo-nav"><span>Julián<span class="brand-mid"> Steven</span> Rojas<span class="brand-mid"> Aya</span></span>
@@ -37,11 +37,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#casos">Casos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#exploracion">Exploración</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#metaads">Meta Ads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#web">Web</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#disenos">Diseños</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#audiovisual">Audiovisual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interactivo">Interactivo</a></li>
                     <li class="nav-item"><a class="nav-link nav-cta" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -49,7 +52,7 @@
     </nav>
 
     <!-- 1 · Inicio -->
-    <section id="inicio" class="snap hero">
+    <section id="inicio" class="snap hero" data-label="Inicio">
         <div class="wrap">
             <div class="hero-text">
                 <span class="hero-kicker">Creatividad &amp; innovación digital</span>
@@ -71,16 +74,11 @@
         <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>GROWTH HACKING&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>EXPERIENCIAS INTERACTIVAS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>GROWTH HACKING&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>EXPERIENCIAS INTERACTIVAS&nbsp;&nbsp;◆&nbsp;&nbsp;</span></div></div>
     </section>
 
-    <!-- 2 · Sobre mí -->
-    <section id="sobre-mi" class="snap alt">
-        <div class="wrap">
-            <div class="sec-head"><h2 class="section-title">Sobre mí</h2></div>
-            <div class="tabs" role="tablist" aria-label="Sobre mí">
-                <button class="tab active" role="tab" aria-selected="true" aria-controls="p-quien" id="t-quien">Quién soy</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-metodo" id="t-metodo" tabindex="-1">Cómo trabajo</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-experiencia" id="t-experiencia" tabindex="-1">Experiencia</button>
+    <section id="sobre-mi" class="snap alt" data-label="Sobre mí">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Sobre mí</h2>
             </div>
-            <div class="tab-panel active panel-center" id="p-quien" role="tabpanel" aria-labelledby="t-quien">
                 <div class="about-grid">
                     <div class="about-text">
                         <p>Soy productor multimedia: transformo ideas en piezas gráficas, audiovisuales y digitales que comunican con claridad y fuerza.</p>
@@ -107,45 +105,24 @@
                         </ul>
                     </div>
                 </div>
+        </div>
+    </section>
+    <section id="metodo" class="snap" data-label="Cómo trabajo">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Cómo trabajo</h2>
+                <p class="section-subtitle">Todo el embudo, una sola persona: cada cosa que hago sirve al mismo objetivo.</p>
             </div>
-            <div class="tab-panel panel-center" id="p-metodo" role="tabpanel" aria-labelledby="t-metodo">
-                <p class="panel-sub">Todo el embudo, una sola persona: cada cosa que hago sirve al mismo objetivo.</p>
                 <ol class="steps">
                     <li class="step"><span class="step-n">01</span><h3>Atraer</h3><p>Diseño las piezas y el video, y lanzo campañas en Facebook e Instagram.</p><span class="step-tools">Meta Ads, Photoshop, After Effects, Premiere</span></li>
                     <li class="step"><span class="step-n">02</span><h3>Convertir</h3><p>Construyo landing pages y sitios en WordPress, con formularios e integraciones que capturan cada contacto.</p><span class="step-tools">WordPress, HTML/CSS/JS, plugins a medida</span></li>
                     <li class="step"><span class="step-n">03</span><h3>Medir</h3><p>Reviso qué campaña y qué página traen resultados, y consulto los datos directamente con SQL.</p><span class="step-tools">SQL, Python, SEO técnico</span></li>
                     <li class="step"><span class="step-n">04</span><h3>Iterar</h3><p>Como produzco yo mismo la pieza y la página, pruebo una nueva versión en horas, no en semanas.</p><span class="step-tools">Pruebas de creativos, ajuste de landing pages</span></li>
                 </ol>
-            </div>
-            <div class="tab-panel panel-center" id="p-experiencia" role="tabpanel" aria-labelledby="t-experiencia">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h4 class="block-title mt-0">Herramientas</h4>
-                        <dl class="stack">
-                            <dt>Adquisición</dt><dd>Meta Ads, landing pages, SEO técnico</dd>
-                            <dt>Web</dt><dd>WordPress, HTML, CSS, JavaScript, Bootstrap</dd>
-                            <dt>Datos</dt><dd>SQL, Python, OSINT</dd>
-                            <dt>Creatividad</dt><dd>Photoshop, Illustrator, After Effects, Premiere, DaVinci Resolve, Figma, Blender</dd>
-                            <dt>Idiomas</dt><dd>Español nativo, inglés B1</dd>
-                        </dl>
-                    </div>
-                    <div class="about-exp">
-                        <ul class="timeline">
-                            <li><span class="tl-role">Desarrollador Web</span><span class="tl-meta">Wappy Company SAS · 2025 – 2026</span></li>
-                            <li><span class="tl-role">Analista TI / Growth Hacker</span><span class="tl-meta">iHack SAS · 2024 – 2025</span></li>
-                            <li><span class="tl-role">Diseñador Gráfico</span><span class="tl-meta">ColorLeds · 2022 – 2023</span></li>
-                            <li><span class="tl-role">Diseñador Gráfico y Redes</span><span class="tl-meta">Revista Emprender · 2022</span></li>
-                            <li><span class="tl-role">Diseñador Gráfico (práctica)</span><span class="tl-meta">Corporación Minuto de Dios · 2021</span></li>
-                        </ul>
-                        <p class="edu-line"><i class="fas fa-graduation-cap"></i>Tecnólogo en Producción de Multimedia (SENA) · Ingeniería Multimedia en curso (Ucompensar)</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-
     <!-- 3 · Casos -->
-    <section id="casos" class="snap">
+    <section id="casos" class="snap" data-label="Casos">
         <div class="wrap center-v">
             <div class="sec-head">
                 <h2 class="section-title">Casos</h2>
@@ -188,18 +165,12 @@
         </div>
     </section>
 
-    <!-- 4 · Portafolio -->
-    <section id="portafolio" class="snap alt">
+    <section id="metaads" class="snap alt" data-label="Campañas Meta Ads">
         <div class="wrap">
-            <div class="sec-head"><h2 class="section-title">Portafolio</h2></div>
-            <div class="tabs" role="tablist" aria-label="Portafolio">
-                <button class="tab active" role="tab" aria-selected="true" aria-controls="p-metaads" id="t-metaads">Campañas Meta Ads</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-disenos" id="t-disenos" tabindex="-1">Diseños Gráficos</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-web" id="t-web" tabindex="-1">Proyectos Web Destacados</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-audiovisual" id="t-audiovisual" tabindex="-1">Portafolio Audiovisual</button>
+            <div class="sec-head">
+                <h2 class="section-title">Campañas Meta Ads</h2>
+                <p class="section-subtitle">Piezas gráficas publicitarias para campañas de Facebook e Instagram</p>
             </div>
-            <div class="tab-panel active" id="p-metaads" role="tabpanel" aria-labelledby="t-metaads">
-                <p class="panel-sub">Piezas gráficas publicitarias para campañas de Facebook e Instagram</p>
                 <div class="gallery-wrap">
                     <button class="g-nav prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
                     <div class="gallery" id="g-metaads">
@@ -243,9 +214,44 @@
                     <button class="g-nav next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
                 </div>
                 <span class="swipe-hint">Desliza para ver más</span>
+        </div>
+    </section>
+    <section id="web" class="snap" data-label="Proyectos Web Destacados">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Proyectos Web Destacados</h2>
+                <p class="section-subtitle">Sitios en los que he trabajado, aportando diseño, desarrollo y estrategia digital</p>
             </div>
-            <div class="tab-panel" id="p-disenos" role="tabpanel" aria-labelledby="t-disenos">
-                <p class="panel-sub">Una colección de mis trabajos de diseño más recientes y creativos</p>
+            <div class="sec-body">
+                <div class="web-grid">
+                    <a href="https://escueladeaviacion.co/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-plane-departure main"></i><h5>Escuela de Aviación</h5><p>Formación para volar alto</p><span class="web-url">escueladeaviacion.co <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://sandramilenarivera.com/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-paint-brush main"></i><h5>Sandra Milena Rivera</h5><p>Arte y expresión personal</p><span class="web-url">sandramilenarivera.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://ihack.red/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-shield-alt main"></i><h5>iHack Red</h5><p>Ciberseguridad y privacidad</p><span class="web-url">ihack.red <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://www.toponenutrition.com/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-dumbbell main"></i><h5>Top One Nutrition</h5><p>Rendimiento y bienestar</p><span class="web-url">toponenutrition.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://wappy.com.co/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-bullhorn main"></i><h5>Wappy</h5><p>Agencia de publicidad y marketing digital</p><span class="web-url">wappy.com.co <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://turntabledealer.com/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-record-vinyl main"></i><h5>Turntable Dealer</h5><p>Pasión por el vinilo</p><span class="web-url">turntabledealer.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="disenos" class="snap alt" data-label="Diseños Gráficos">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Diseños Gráficos</h2>
+                <p class="section-subtitle">Una colección de mis trabajos de diseño más recientes y creativos</p>
+            </div>
                 <div class="gallery-wrap">
                     <button class="g-nav prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
                     <div class="gallery" id="g-disenos">
@@ -301,32 +307,14 @@
                     <button class="g-nav next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
                 </div>
                 <span class="swipe-hint">Desliza para ver más</span>
+        </div>
+    </section>
+    <section id="audiovisual" class="snap" data-label="Portafolio Audiovisual">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Portafolio Audiovisual</h2>
+                <p class="section-subtitle">Producciones en video donde combino creatividad, técnica y narrativa visual</p>
             </div>
-            <div class="tab-panel" id="p-web" role="tabpanel" aria-labelledby="t-web">
-                <p class="panel-sub">Sitios en los que he trabajado, aportando diseño, desarrollo y estrategia digital</p>
-                <div class="web-grid">
-                    <a href="https://escueladeaviacion.co/" target="_blank" rel="noopener" class="web-project-card">
-                        <i class="fas fa-plane-departure main"></i><h5>Escuela de Aviación</h5><p>Formación para volar alto</p><span class="web-url">escueladeaviacion.co <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
-                    </a>
-                    <a href="https://sandramilenarivera.com/" target="_blank" rel="noopener" class="web-project-card">
-                        <i class="fas fa-paint-brush main"></i><h5>Sandra Milena Rivera</h5><p>Arte y expresión personal</p><span class="web-url">sandramilenarivera.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
-                    </a>
-                    <a href="https://ihack.red/" target="_blank" rel="noopener" class="web-project-card">
-                        <i class="fas fa-shield-alt main"></i><h5>iHack Red</h5><p>Ciberseguridad y privacidad</p><span class="web-url">ihack.red <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
-                    </a>
-                    <a href="https://www.toponenutrition.com/" target="_blank" rel="noopener" class="web-project-card">
-                        <i class="fas fa-dumbbell main"></i><h5>Top One Nutrition</h5><p>Rendimiento y bienestar</p><span class="web-url">toponenutrition.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
-                    </a>
-                    <a href="https://wappy.com.co/" target="_blank" rel="noopener" class="web-project-card">
-                        <i class="fas fa-bullhorn main"></i><h5>Wappy</h5><p>Agencia de publicidad y marketing digital</p><span class="web-url">wappy.com.co <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
-                    </a>
-                    <a href="https://turntabledealer.com/" target="_blank" rel="noopener" class="web-project-card">
-                        <i class="fas fa-record-vinyl main"></i><h5>Turntable Dealer</h5><p>Pasión por el vinilo</p><span class="web-url">turntabledealer.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
-                    </a>
-                </div>
-            </div>
-            <div class="tab-panel" id="p-audiovisual" role="tabpanel" aria-labelledby="t-audiovisual">
-                <p class="panel-sub">Producciones en video donde combino creatividad, técnica y narrativa visual</p>
                 <div class="gallery-wrap">
                     <button class="g-nav prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
                     <div class="gallery" id="g-video">
@@ -346,22 +334,42 @@
                     <button class="g-nav next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
                 </div>
                 <span class="swipe-hint">Desliza para ver más</span>
-            </div>
         </div>
     </section>
-
-    <!-- 5 · Exploración -->
-    <section id="exploracion" class="snap">
-        <div class="wrap">
-            <div class="sec-head"><h2 class="section-title">Exploración creativa</h2></div>
-            <div class="tabs" role="tablist" aria-label="Exploración creativa">
-                <button class="tab active" role="tab" aria-selected="true" aria-controls="p-interactivo" id="t-interactivo">Experiencias Interactivas <span class="beta">Beta</span></button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-3d" id="t-3d" tabindex="-1">Modelado y Renderizado 3D</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-arquitectura" id="t-arquitectura" tabindex="-1">Proyectos Arquitectónicos</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-musica" id="t-musica" tabindex="-1">Producciones Musicales</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="p-catalogo" id="t-catalogo" tabindex="-1">Catálogo Interactivo</button>
+    <section id="experiencia" class="snap alt" data-label="Experiencia">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Experiencia</h2>
             </div>
-            <div class="tab-panel active panel-center" id="p-interactivo" role="tabpanel" aria-labelledby="t-interactivo">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h4 class="block-title mt-0">Herramientas</h4>
+                        <dl class="stack">
+                            <dt>Adquisición</dt><dd>Meta Ads, landing pages, SEO técnico</dd>
+                            <dt>Web</dt><dd>WordPress, HTML, CSS, JavaScript, Bootstrap</dd>
+                            <dt>Datos</dt><dd>SQL, Python, OSINT</dd>
+                            <dt>Creatividad</dt><dd>Photoshop, Illustrator, After Effects, Premiere, DaVinci Resolve, Figma, Blender</dd>
+                            <dt>Idiomas</dt><dd>Español nativo, inglés B1</dd>
+                        </dl>
+                    </div>
+                    <div class="about-exp">
+                        <ul class="timeline">
+                            <li><span class="tl-role">Desarrollador Web</span><span class="tl-meta">Wappy Company SAS · 2025 – 2026</span></li>
+                            <li><span class="tl-role">Analista TI / Growth Hacker</span><span class="tl-meta">iHack SAS · 2024 – 2025</span></li>
+                            <li><span class="tl-role">Diseñador Gráfico</span><span class="tl-meta">ColorLeds · 2022 – 2023</span></li>
+                            <li><span class="tl-role">Diseñador Gráfico y Redes</span><span class="tl-meta">Revista Emprender · 2022</span></li>
+                            <li><span class="tl-role">Diseñador Gráfico (práctica)</span><span class="tl-meta">Corporación Minuto de Dios · 2021</span></li>
+                        </ul>
+                        <p class="edu-line"><i class="fas fa-graduation-cap"></i>Tecnólogo en Producción de Multimedia (SENA) · Ingeniería Multimedia en curso (Ucompensar)</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section id="interactivo" class="snap" data-label="Experiencias interactivas">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Experiencias Interactivas <span class="beta">Beta</span></h2>
+            </div>
                 <div class="beta-grid">
                     <div class="beta-intro">
                         <span class="beta-flag"><i class="fas fa-flask"></i> Línea en desarrollo</span>
@@ -376,9 +384,14 @@
                         <li><i class="fas fa-hand-pointer"></i><div><h4>Instalaciones interactivas</h4><p>Piezas que responden al público, para activaciones de marca y exposiciones.</p></div></li>
                     </ul>
                 </div>
+        </div>
+    </section>
+    <section id="modelado-3d" class="snap alt" data-label="Modelado y Renderizado 3D">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Modelado y Renderizado 3D</h2>
+                <p class="section-subtitle">Exploración de formas, texturas y luces a través de la creación tridimensional.</p>
             </div>
-            <div class="tab-panel" id="p-3d" role="tabpanel" aria-labelledby="t-3d">
-                <p class="panel-sub">Exploración de formas, texturas y luces a través de la creación tridimensional.</p>
                 <div class="gallery-wrap">
                     
                     <div class="gallery" id="g-3d">
@@ -404,9 +417,14 @@
                     
                 </div>
                 <span class="swipe-hint">Desliza para ver más</span>
+        </div>
+    </section>
+    <section id="proyectos" class="snap" data-label="Proyectos Arquitectónicos">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Proyectos Arquitectónicos</h2>
+                <p class="section-subtitle">Visualización y representación de espacios arquitectónicos con el más alto nivel de detalle</p>
             </div>
-            <div class="tab-panel" id="p-arquitectura" role="tabpanel" aria-labelledby="t-arquitectura">
-                <p class="panel-sub">Visualización y representación de espacios arquitectónicos con el más alto nivel de detalle</p>
                 <div class="arch-layout">
                     <div class="fit-box">
                         <div class="media-frame">
@@ -451,9 +469,14 @@
                 </div>
                 <span class="swipe-hint">Desliza para ver más</span>
                 </div>
+        </div>
+    </section>
+    <section id="musica" class="snap alt" data-label="Producciones Musicales">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Producciones Musicales</h2>
+                <p class="section-subtitle">Música original y bandas sonoras</p>
             </div>
-            <div class="tab-panel" id="p-musica" role="tabpanel" aria-labelledby="t-musica">
-                <p class="panel-sub">Producciones musicales y bandas sonoras originales</p>
                 <div class="music-grid">
                     <div class="music-list">
                         <div class="audio-player">
@@ -472,9 +495,14 @@
                         <div class="g-cap"><h5>The Last Torrent</h5><p>Banda sonora original para proyecto cinematográfico</p></div>
                     </div>
                 </div>
+        </div>
+    </section>
+    <section id="catalogo" class="snap" data-label="Catálogo Interactivo">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Catálogo Interactivo</h2>
+                <p class="section-subtitle">Visualiza directamente el documento en línea, sin necesidad de descargas</p>
             </div>
-            <div class="tab-panel" id="p-catalogo" role="tabpanel" aria-labelledby="t-catalogo">
-                <p class="panel-sub">Visualiza directamente el documento en línea, sin necesidad de descargas</p>
                 <div class="catalog-box">
                     <div class="catalog-frame">
                         <iframe data-src="media/img/nuevos/catalogo2025.pdf#view=FitH" title="Catálogo Interactivo 2025"></iframe>
@@ -488,12 +516,10 @@
                         <a href="media/img/nuevos/catalogo2025.pdf" target="_blank" rel="noopener" class="btn btn-primary">Ver catálogo</a>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
-
     <!-- 6 · Contacto -->
-    <section id="contacto" class="snap contact">
+    <section id="contacto" class="snap contact" data-label="Contacto">
         <div class="wrap">
             <div class="sec-head"><h2 class="section-title">Conectemos</h2></div>
             <p class="contact-lead">Si te ha gustado mi trabajo o tienes una idea en mente, no dudes en contactarme.</p>
@@ -508,6 +534,10 @@
             <p>© 2026 Julián Steven Rojas Aya · Portafolio Multimedia Profesional. Todos los derechos reservados.</p>
         </footer>
     </section>
+
+    <nav class="dots" aria-label="Secciones">
+        <ul id="dotList"></ul>
+    </nav>
 
     <a href="#inicio" class="back-to-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></a>
 
@@ -553,7 +583,7 @@
 
         // Sección activa en el menú
         // (Música y Catálogo resaltan su sección "padre" del menú)
-        const parentOf = {};
+        const parentOf = { metodo: 'sobre-mi', 'modelado-3d': 'interactivo', proyectos: 'interactivo', musica: 'interactivo', catalogo: 'interactivo' };
         const spy = new IntersectionObserver((entries) => {
             entries.forEach((e) => {
                 if (!e.isIntersecting) return;
@@ -657,28 +687,34 @@
             });
         });
 
-        // Pestañas (cada grupo controla sus propios paneles)
-        document.querySelectorAll('.tabs').forEach((group) => {
-            const ts = Array.from(group.querySelectorAll('.tab'));
-            const activate = (tab) => {
-                ts.forEach((t) => {
-                    const on = t === tab;
-                    t.classList.toggle('active', on); t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
-                    document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
+        // El catálogo (84 MB) solo se carga cuando llegas a su sección y en pantallas grandes
+        const catFrame = document.querySelector('.catalog-frame iframe');
+        if (catFrame) {
+            const catObs = new IntersectionObserver((entries) => {
+                entries.forEach((e) => {
+                    if (e.isIntersecting && getComputedStyle(catFrame.parentElement).display !== 'none') {
+                        catFrame.src = catFrame.dataset.src; catObs.disconnect();
+                    }
                 });
-                group.parentElement.querySelectorAll('video, audio').forEach((m) => m.pause());
-                const frame = document.getElementById(tab.getAttribute('aria-controls')).querySelector('.catalog-frame iframe');
-                if (frame && !frame.src && getComputedStyle(frame.parentElement).display !== 'none') frame.src = frame.dataset.src;
-                window.dispatchEvent(new Event('resize'));
-            };
-            ts.forEach((t, i) => {
-                t.addEventListener('click', () => activate(t));
-                t.addEventListener('keydown', (e) => {
-                    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-                    const n = ts[(i + (e.key === 'ArrowRight' ? 1 : ts.length - 1)) % ts.length]; n.focus(); activate(n);
-                });
-            });
+            }, { rootMargin: '100% 0px' });
+            catObs.observe(document.getElementById('catalogo'));
+        }
+
+        // Puntos de navegación lateral (una por sección)
+        const dotList = document.getElementById('dotList');
+        const dotLinks = sections.map((s) => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = '#' + s.id;
+            a.setAttribute('aria-label', s.dataset.label || s.id);
+            a.innerHTML = '<span class="dot-label">' + (s.dataset.label || s.id) + '</span>';
+            li.appendChild(a); dotList.appendChild(li);
+            return a;
         });
+        const dotSpy = new IntersectionObserver((entries) => {
+            entries.forEach((e) => { if (e.isIntersecting) dotLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)); });
+        }, { threshold: 0.55 });
+        sections.forEach((s) => dotSpy.observe(s));
 
         // Pausar videos al salir de su sección
         const vidObs = new IntersectionObserver((entries) => {
