@@ -3,933 +3,695 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Multimedia Profesional | Julián Steven Rojas Aya</title>
-    <meta name="description" content="Portafolio de Julián Steven Rojas Aya: diseño gráfico, modelado 3D, producción audiovisual, campañas Meta Ads y desarrollo web.">
+    <title>Julián Rojas | Growth Hacker en Bogotá</title>
+    <meta name="description" content="Julián Steven Rojas Aya, growth hacker en Bogotá. Creo la pieza, el video, la landing page y la campaña en Meta Ads, y uso los datos para que vendan más.">
     <meta name="author" content="Julián Steven Rojas Aya">
-    <meta name="keywords" content="portafolio, diseño grafico, modelado 3D, audiovisual, meta ads, desarrollo web, multimedia">
-    <meta property="og:title" content="Portafolio Multimedia Profesional | Julián Steven Rojas Aya">
-    <meta property="og:description" content="Diseño gráfico, modelado 3D, producción audiovisual, campañas Meta Ads y desarrollo web.">
+    <meta name="theme-color" content="#0e0f1a">
+    <meta property="og:title" content="Julián Rojas | Growth Hacker">
+    <meta property="og:description" content="Creo la pieza, la landing page y la campaña, y uso los datos para que vendan más.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://julian0066.github.io/portafolio-j/">
+    <meta property="og:image" content="https://julian0066.github.io/portafolio-j/logo.png">
     <link rel="icon" type="image/png" href="logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Lain Aesthetic Overlays -->
-    <div class="scanlines-overlay"></div>
-    <!-- Barra de progreso de scroll -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-    <!-- Partículas -->
-    <div id="particles-js"></div>
-<!-- Navegación -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#inicio">
-            <img src="logo.png" alt="Logo Julián Rojas" class="logo-nav"> Julián Steven Rojas Aya
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#disenos">Diseños</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#web">Web</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#proyectos">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#3d">3D</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#audiovisual">Audiovisual</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#metaads">Meta Ads</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <div class="scanlines-overlay" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div id="particles-js" aria-hidden="true"></div>
 
-<!-- Hero Section -->
-<section id="inicio" class="hero">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h1 class="hero-title">Creatividad & Innovación Digital</h1>
-                <p class="hero-subtitle">Productor multimedia: diseño gráfico, 3D, audiovisual, Meta Ads y desarrollo web</p>
-
-                <!-- Video para vista móvil -->
-                <div class="d-lg-none my-4">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1ivrfWdA-HhQJpbww01WwqTpHcSShLvzc/preview?mute=1" 
-                                title="Video principal (móvil)" allow="autoplay" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                </div>
-
-                <div class="hero-cta d-grid gap-2 d-sm-flex">
-                    <a href="#disenos" class="btn btn-primary">Ver Trabajos</a>
-                    <a href="hoja-de-vida.pdf" download class="btn btn-outline-light">Descargar Hoja de Vida</a>
-                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">Contactar</button>
-                </div>
-
-                <a href="#sobre-mi" class="scroll-indicator" aria-label="Bajar hasta Sobre Mí">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-            <div class="col-lg-6 d-none d-lg-block">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/1ivrfWdA-HhQJpbww01WwqTpHcSShLvzc/preview?mute=1" 
-                            title="Video principal (escritorio)" allow="autoplay" allowfullscreen loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Cinta informativa -->
-<div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-        <span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-        <span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
-    </div>
-</div>
-
-<!-- Sobre Mí -->
-<section id="sobre-mi" class="section bg-dark">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2 class="section-title mb-4">Sobre Mí</h2>
-                <p class="card-text fs-6">Soy productor multimedia: transformo ideas en piezas gráficas, audiovisuales y digitales que comunican con claridad y fuerza.</p>
-                <p class="card-text fs-6">Mi trabajo une la identidad de marca con la producción de contenido: diseño la pieza, la animo, y la hago llegar a través de campañas publicitarias. Todo en una sola línea de trabajo, siempre con enfoque en resultados.</p>
-            </div>
-            <div class="col-lg-6">
-                <h4 class="mb-4">Especialidad</h4>
-                <div class="skill-badges">
-                    <span class="badge">Diseño Gráfico</span>
-                    <span class="badge">Campañas Meta Ads</span>
-                    <span class="badge">Producción Audiovisual</span>
-                    <span class="badge">Modelado 3D</span>
-                    <span class="badge">Desarrollo Web</span>
-                </div>
-                <h4 class="mt-5 mb-3">Servicios</h4>
-                <ul class="list-unstyled services-list">
-                    <li><i class="fas fa-palette me-2"></i>Creación de identidad y piezas gráficas</li>
-                    <li><i class="fas fa-cubes me-2"></i>Modelado y renderizado 3D</li>
-                    <li><i class="fas fa-video me-2"></i>Producción y edición audiovisual</li>
-                    <li><i class="fas fa-bullhorn me-2"></i>Publicidad digital y Meta Ads</li>
-                    <li><i class="fas fa-code me-2"></i>Maquetación y desarrollo web</li>
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="logo.png" alt="" class="logo-nav"><span>Julián<span class="brand-mid"> Steven</span> Rojas<span class="brand-mid"> Aya</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#metodo">Método</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#casos">Casos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pauta">Pauta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#web">Web</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diseno">Diseño</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exploracion">Exploración</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Diseños Gráficos -->
-<section id="disenos" class="section">
-    <div class="container">
-        <h2 class="section-title">Diseños Gráficos</h2>
-        <p class="section-subtitle">Una colección de mis trabajos de diseño más recientes y creativos</p>
-        
-        <div class="row">
-            <!-- Imágenes en una sola columna en móvil -->
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/logo-parejas.png" class="card-img-top" alt="Logo Parejas" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/logo-parejas.png" data-fancybox="gallery-1" data-caption="Logo Parejas" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Logo Parejas</h5>
-                        <p class="card-text">Diseño de identidad corporativa para terapia de parejas</p>
-                    </div>
+    <!-- 1 · Inicio -->
+    <section id="inicio" class="snap hero">
+        <div class="wrap">
+            <div class="hero-text">
+                <span class="hero-kicker">Julián Rojas, growth hacker en Bogotá</span>
+                <h1 class="hero-title">Diseño, construyo y lanzo lo que vende.</h1>
+                <p class="hero-subtitle">Hago la pieza, el video, la landing page y la campaña en Meta Ads, y uso los datos para que cada versión venda más que la anterior.</p>
+            </div>
+            <div class="hero-media">
+                <div class="media-frame">
+                    <button type="button" class="vfacade" data-provider="drive" data-id="1ivrfWdA-HhQJpbww01WwqTpHcSShLvzc" aria-label="Reproducir: video de presentación"><img src="https://drive.google.com/thumbnail?id=1ivrfWdA-HhQJpbww01WwqTpHcSShLvzc&amp;sz=w1280" alt="" loading="lazy" onerror="this.remove()"><span class="vplay"><i class="fas fa-play"></i></span></button>
                 </div>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/evento-parejas.png" class="card-img-top" alt="Evento Parejas" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/evento-parejas.png" data-fancybox="gallery-1" data-caption="Evento Parejas" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Evento Parejas</h5>
-                        <p class="card-text">Diseño promocional para evento de terapia de parejas</p>
-                    </div>
-                </div>
+            <div class="hero-cta">
+                <a href="#casos" class="btn btn-primary">Ver casos</a>
+                <a href="hoja-de-vida.pdf" download class="btn btn-outline-light"><i class="fas fa-download me-2"></i>Hoja de vida</a>
+                <a href="#contacto" class="btn btn-outline-light">Contactar</a>
+                <p class="hero-proof">Antes en iHack, Wappy y ColorLeds</p>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/hoy-es-el-dia.png" class="card-img-top" alt="Hoy es el Día" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/hoy-es-el-dia.png" data-fancybox="gallery-1" data-caption="Hoy es el Día" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Hoy es el Día</h5>
-                        <p class="card-text">Diseño motivacional para campaña inspiracional</p>
-                    </div>
-                </div>
+        </div>
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>LANDING PAGES&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>WORDPRESS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>SEO TÉCNICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>SQL&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>VIDEO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DISEÑO&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
+                <span>META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>LANDING PAGES&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>WORDPRESS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>SEO TÉCNICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>SQL&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>VIDEO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DISEÑO&nbsp;&nbsp;◆&nbsp;&nbsp;</span>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/programate.png" class="card-img-top" alt="Programate" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/programate.png" data-fancybox="gallery-1" data-caption="Programate" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Programate</h5>
-                        <p class="card-text">Diseño para programa de educación en tecnología</p>
-                    </div>
+        </div>
+    </section>
+
+    <!-- 2 · Método -->
+    <section id="metodo" class="snap alt">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Todo el embudo, una sola persona</h2>
+                <p class="section-subtitle">No soy un todero: cada cosa que hago sirve al mismo objetivo, que es vender. Así trabajo:</p>
+            </div>
+            <ol class="steps">
+                <li class="step">
+                    <span class="step-n">01</span>
+                    <h3>Atraer</h3>
+                    <p>Diseño las piezas y el video, y lanzo campañas en Facebook e Instagram.</p>
+                    <span class="step-tools">Meta Ads, Photoshop, After Effects, Premiere</span>
+                </li>
+                <li class="step">
+                    <span class="step-n">02</span>
+                    <h3>Convertir</h3>
+                    <p>Construyo landing pages y sitios en WordPress, con formularios e integraciones que capturan cada contacto.</p>
+                    <span class="step-tools">WordPress, HTML/CSS/JS, Plugins a medida</span>
+                </li>
+                <li class="step">
+                    <span class="step-n">03</span>
+                    <h3>Medir</h3>
+                    <p>Reviso qué campaña y qué página traen resultados, y consulto los datos directamente con SQL.</p>
+                    <span class="step-tools">SQL, Python, SEO técnico</span>
+                </li>
+                <li class="step">
+                    <span class="step-n">04</span>
+                    <h3>Iterar</h3>
+                    <p>Como produzco yo mismo la pieza y la página, pruebo una nueva versión en horas, no en semanas.</p>
+                    <span class="step-tools">Pruebas de creativos, Ajuste de landing pages</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 3 · Casos -->
+    <section id="casos" class="snap">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Casos</h2>
+                <p class="section-subtitle">Tres proyectos donde uní creatividad, web y pauta.</p>
+            </div>
+            <div class="cases">
+                <article class="case">
+                    <div class="case-top"><i class="fas fa-shield-alt"></i><span class="case-client">iHack SAS</span><span class="case-when">2024 – 2025</span></div>
+                    <h3>Captación de clientes para una empresa de ciberseguridad</h3>
+                    <p class="case-role">Analista TI / Growth Hacker</p>
+                    <ul>
+                        <li>Diseñé y optimicé campañas en Facebook Ads.</li>
+                        <li>Construí las landing pages a las que llegaba la pauta.</li>
+                        <li>Hice investigación OSINT y análisis de riesgos en soluciones TIC.</li>
+                    </ul>
+                    <div class="case-foot"><span class="tag">Meta Ads</span><span class="tag">Landing pages</span><span class="tag">OSINT</span><a class="case-link" href="https://ihack.red/" target="_blank" rel="noopener">Ver sitio <i class="fas fa-arrow-up-right-from-square"></i></a></div>
+                </article>
+                <article class="case">
+                    <div class="case-top"><i class="fas fa-bullhorn"></i><span class="case-client">Wappy Company</span><span class="case-when">2025 – 2026</span></div>
+                    <h3>Sitios conectados a la pauta para clientes de agencia</h3>
+                    <p class="case-role">Desarrollador web</p>
+                    <ul>
+                        <li>Desarrollé y mantuve sitios WordPress responsive para los clientes de la agencia.</li>
+                        <li>Optimicé rendimiento y SEO técnico, e integré los sitios con la pauta y las landing pages.</li>
+                        <li>Programé plugins, formularios e integraciones, y consulté datos directamente con SQL.</li>
+                    </ul>
+                    <div class="case-foot"><span class="tag">WordPress</span><span class="tag">SEO técnico</span><span class="tag">SQL</span><a class="case-link" href="https://wappy.com.co/" target="_blank" rel="noopener">Ver sitio <i class="fas fa-arrow-up-right-from-square"></i></a></div>
+                </article>
+                <article class="case">
+                    <div class="case-top"><i class="fas fa-dumbbell"></i><span class="case-client">Top One Nutrition</span><span class="case-when">Web + pauta</span></div>
+                    <h3>Sitio y piezas de pauta para una marca de suplementos</h3>
+                    <p class="case-role">Web y creatividad para Meta Ads</p>
+                    <ul>
+                        <li>Trabajé en el sitio web de la marca.</li>
+                        <li>Diseñé las piezas para sus campañas en Facebook e Instagram.</li>
+                    </ul>
+                    <div class="case-foot"><span class="tag">Web</span><span class="tag">Meta Ads</span><span class="tag">Diseño</span><a class="case-link" href="https://www.toponenutrition.com/" target="_blank" rel="noopener">Ver sitio <i class="fas fa-arrow-up-right-from-square"></i></a></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 · Pauta -->
+    <section id="pauta" class="snap alt">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Piezas para pauta</h2>
+                <p class="section-subtitle">Creatividades para campañas en Facebook e Instagram.</p>
+            </div>
+            <div class="gallery-wrap">
+                <button class="g-nav prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery" id="g-metaads">
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/nuevos/gladiators.png" data-fancybox="pauta" data-caption="Gladiators — Pieza para evento deportivo">
+                            <img src="media/img/nuevos/gladiators.png" alt="Gladiators" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Gladiators</h5><p>Pieza para evento deportivo</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/nuevos/hypefestival.png" data-fancybox="pauta" data-caption="Hypefestival — Identidad para festival musical">
+                            <img src="media/img/nuevos/hypefestival.png" alt="Hypefestival" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Hypefestival</h5><p>Identidad para festival musical</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/nuevos/parchadoxx.png" data-fancybox="pauta" data-caption="Parchadoxx — Pieza para marca de ropa urbana">
+                            <img src="media/img/nuevos/parchadoxx.png" alt="Parchadoxx" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Parchadoxx</h5><p>Pieza para marca de ropa urbana</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/nuevos/prototype.png" data-fancybox="pauta" data-caption="Prototype — Pieza para empresa de tecnología">
+                            <img src="media/img/nuevos/prototype.png" alt="Prototype" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Prototype</h5><p>Pieza para empresa de tecnología</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/nuevos/rave.png" data-fancybox="pauta" data-caption="Rave — Pieza para evento de música electrónica">
+                            <img src="media/img/nuevos/rave.png" alt="Rave" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Rave</h5><p>Pieza para evento de música electrónica</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/nuevos/topnutrion.png" data-fancybox="pauta" data-caption="Top One Nutrition — Pieza para marca de suplementos">
+                            <img src="media/img/nuevos/topnutrion.png" alt="Top One Nutrition" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Top One Nutrition</h5><p>Pieza para marca de suplementos</p></div>
+                    </article>
+                </div>
+                <button class="g-nav next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <span class="swipe-hint">Desliza para ver más</span>
+        </div>
+    </section>
+
+    <!-- 5 · Web -->
+    <section id="web" class="snap">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Sitios y landing pages</h2>
+                <p class="section-subtitle">Sitios en los que trabajé: diseño, desarrollo y conexión con la pauta.</p>
+            </div>
+            <div class="sec-body">
+                <div class="web-grid">
+                    <a href="https://ihack.red/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-shield-alt main"></i><h5>iHack</h5><p>Ciberseguridad y privacidad</p><span class="web-url">ihack.red <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://wappy.com.co/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-bullhorn main"></i><h5>Wappy</h5><p>Agencia de publicidad y marketing digital</p><span class="web-url">wappy.com.co <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://www.toponenutrition.com/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-dumbbell main"></i><h5>Top One Nutrition</h5><p>Suplementos deportivos</p><span class="web-url">toponenutrition.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://escueladeaviacion.co/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-plane-departure main"></i><h5>Escuela de Aviación</h5><p>Formación de pilotos</p><span class="web-url">escueladeaviacion.co <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://sandramilenarivera.com/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-paint-brush main"></i><h5>Sandra Milena Rivera</h5><p>Marca personal de artista</p><span class="web-url">sandramilenarivera.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
+                    <a href="https://turntabledealer.com/" target="_blank" rel="noopener" class="web-project-card">
+                        <i class="fas fa-record-vinyl main"></i><h5>Turntable Dealer</h5><p>Tienda de vinilos</p><span class="web-url">turntabledealer.com <i class="fas fa-arrow-up-right-from-square ms-1"></i></span>
+                    </a>
                 </div>
             </div>
         </div>
-        
-        <!-- Segunda fila de diseños -->
-        <div class="row mt-4">
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/taller-carismatico.png" class="card-img-top" alt="Taller Carismático" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/taller-carismatico.png" data-fancybox="gallery-1" data-caption="Taller Carismático" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Taller Carismático</h5>
-                        <p class="card-text">Diseño para taller de desarrollo personal</p>
-                    </div>
-                </div>
+    </section>
+
+    <!-- 6 · Diseño -->
+    <section id="diseno" class="snap alt">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Diseño gráfico</h2>
+                <p class="section-subtitle">Identidades y piezas promocionales para marcas, eventos y campañas.</p>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/casa-jesus.png" class="card-img-top" alt="Casa Jesús" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/casa-jesus.png" data-fancybox="gallery-1" data-caption="Casa Jesús" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Casa Jesús</h5>
-                        <p class="card-text">Identidad visual para centro de retiros espirituales</p>
-                    </div>
+            <div class="gallery-wrap">
+                <button class="g-nav prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery" id="g-disenos">
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/logo-parejas.png" data-fancybox="diseno" data-caption="Logo Parejas — Identidad corporativa para terapia de parejas">
+                            <img src="media/img/logo-parejas.png" alt="Logo Parejas" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Logo Parejas</h5><p>Identidad corporativa para terapia de parejas</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/evento-parejas.png" data-fancybox="diseno" data-caption="Evento Parejas — Pieza promocional para evento de terapia de parejas">
+                            <img src="media/img/evento-parejas.png" alt="Evento Parejas" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Evento Parejas</h5><p>Pieza promocional para evento de terapia de parejas</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/hoy-es-el-dia.png" data-fancybox="diseno" data-caption="Hoy es el Día — Pieza para campaña inspiracional">
+                            <img src="media/img/hoy-es-el-dia.png" alt="Hoy es el Día" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Hoy es el Día</h5><p>Pieza para campaña inspiracional</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/programate.png" data-fancybox="diseno" data-caption="Prográmate — Pieza para programa de educación en tecnología">
+                            <img src="media/img/programate.png" alt="Prográmate" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Prográmate</h5><p>Pieza para programa de educación en tecnología</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/taller-carismatico.png" data-fancybox="diseno" data-caption="Taller Carismático — Pieza para taller de desarrollo personal">
+                            <img src="media/img/taller-carismatico.png" alt="Taller Carismático" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Taller Carismático</h5><p>Pieza para taller de desarrollo personal</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/casa-jesus.png" data-fancybox="diseno" data-caption="Casa Jesús — Identidad visual para centro de retiros espirituales">
+                            <img src="media/img/casa-jesus.png" alt="Casa Jesús" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Casa Jesús</h5><p>Identidad visual para centro de retiros espirituales</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/tesoro.png" data-fancybox="diseno" data-caption="Tesoro — Diseño para aplicación de finanzas personales">
+                            <img src="media/img/tesoro.png" alt="Tesoro" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Tesoro</h5><p>Diseño para aplicación de finanzas personales</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/pan-palabra.png" data-fancybox="diseno" data-caption="Pan Palabra — Diseño para blog de reflexiones espirituales">
+                            <img src="media/img/pan-palabra.png" alt="Pan Palabra" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Pan Palabra</h5><p>Diseño para blog de reflexiones espirituales</p></div>
+                    </article>
                 </div>
+                <button class="g-nav next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/tesoro.png" class="card-img-top" alt="Tesoro" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/tesoro.png" data-fancybox="gallery-1" data-caption="Tesoro" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Tesoro</h5>
-                        <p class="card-text">Diseño para aplicación de finanzas personales</p>
-                    </div>
+            <span class="swipe-hint">Desliza para ver más</span>
+        </div>
+    </section>
+
+    <!-- 7 · Video -->
+    <section id="video" class="snap">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Video</h2>
+                <p class="section-subtitle">Producción y edición para marcas, eventos y proyectos de cine.</p>
+            </div>
+            <div class="gallery-wrap">
+                <button class="g-nav prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery" id="g-video">
+                    <article class="g-card">
+                        <div class="g-media"><video src="media/img/nuevos/bep.mp4#t=0.5" controls preload="metadata" playsinline></video></div>
+                        <div class="g-cap"><h5>BEP, video corporativo</h5><p>Producción audiovisual para marca de tecnología</p></div>
+                    </article>
+                    <article class="g-card">
+                        <div class="g-media"><video src="media/img/nuevos/trailer.mp4#t=0.5" controls preload="metadata" playsinline></video></div>
+                        <div class="g-cap"><h5>Tráiler cinematográfico</h5><p>Tráiler para proyecto cinematográfico independiente</p></div>
+                    </article>
+                    <article class="g-card">
+                        <div class="g-media"><video src="media/img/nuevos/futbol.mp4#t=0.5" controls preload="metadata" playsinline></video></div>
+                        <div class="g-cap"><h5>Cobertura deportiva</h5><p>Producción para evento deportivo profesional</p></div>
+                    </article>
                 </div>
+                <button class="g-nav next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/pan-palabra.png" class="card-img-top" alt="Pan Palabra" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/pan-palabra.png" data-fancybox="gallery-1" data-caption="Pan Palabra" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Pan Palabra</h5>
-                        <p class="card-text">Diseño para blog de reflexiones espirituales</p>
-                    </div>
+            <span class="swipe-hint">Desliza para ver más</span>
+        </div>
+    </section>
+
+    <!-- 8 · Experiencia -->
+    <section id="experiencia" class="snap alt">
+        <div class="wrap center-v">
+            <div class="sec-head">
+                <h2 class="section-title">Experiencia</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Empecé como diseñador y productor multimedia. Después sumé desarrollo web y pauta digital, y hoy uso todo eso con un mismo fin: que una marca consiga más clientes.</p>
+                    <h4 class="block-title">Herramientas</h4>
+                    <dl class="stack">
+                        <dt>Adquisición</dt><dd>Meta Ads, landing pages, SEO técnico</dd>
+                        <dt>Web</dt><dd>WordPress, HTML, CSS, JavaScript, Bootstrap</dd>
+                        <dt>Datos</dt><dd>SQL, Python, OSINT</dd>
+                        <dt>Creatividad</dt><dd>Photoshop, Illustrator, After Effects, Premiere, DaVinci Resolve, Figma, Blender</dd>
+                        <dt>Idiomas</dt><dd>Español nativo, inglés B1</dd>
+                    </dl>
+                </div>
+                <div class="about-exp">
+                    <ul class="timeline">
+                        <li><span class="tl-role">Desarrollador Web</span><span class="tl-meta">Wappy Company SAS · 2025 – 2026</span></li>
+                        <li><span class="tl-role">Analista TI / Growth Hacker</span><span class="tl-meta">iHack SAS · 2024 – 2025</span></li>
+                        <li><span class="tl-role">Diseñador Gráfico</span><span class="tl-meta">ColorLeds · 2022 – 2023</span></li>
+                        <li><span class="tl-role">Diseñador Gráfico y Redes</span><span class="tl-meta">Revista Emprender · 2022</span></li>
+                        <li><span class="tl-role">Diseñador Gráfico (práctica)</span><span class="tl-meta">Corporación Minuto de Dios · 2021</span></li>
+                    </ul>
+                    <p class="edu-line"><i class="fas fa-graduation-cap"></i>Tecnólogo en Producción de Multimedia (SENA) · Ingeniería Multimedia en curso (Ucompensar)</p>
                 </div>
             </div>
         </div>
-        
-        <div class="text-center mt-5">
-            <a href="#web" class="btn btn-outline-light">Ver más proyectos <i class="fas fa-arrow-down ms-2"></i></a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Proyectos Web -->
-<section id="web" class="section">
-    <div class="container">
-        <h2 class="section-title">Proyectos Web Destacados</h2>
-        <p class="section-subtitle">Sitios en los que he trabajado, aportando diseño, desarrollo y estrategia digital</p>
-        
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="https://escueladeaviacion.co/" target="_blank" rel="noopener" class="web-project-card">
-                    <div class="web-project">
-                        <i class="fas fa-plane-departure"></i>
-                        <h5>Escuela de Aviación</h5>
-                        <p>Formación para volar alto</p>
-                    </div>
-                </a>
+    <!-- 9 · Exploración creativa -->
+    <section id="exploracion" class="snap">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">Exploración creativa</h2>
+                <p class="section-subtitle">Proyectos personales y de estudio: 3D, iluminación, música y catálogos.</p>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="https://sandramilenarivera.com/" target="_blank" rel="noopener" class="web-project-card">
-                    <div class="web-project">
-                        <i class="fas fa-paint-brush"></i>
-                        <h5>Sandra Milena Rivera</h5>
-                        <p>Arte y expresión personal</p>
-                    </div>
-                </a>
+            <div class="tabs" role="tablist" aria-label="Proyectos de exploración">
+                <button class="tab active" role="tab" aria-selected="true" aria-controls="tab-3d" id="t-3d">3D</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="tab-luz" id="t-luz">Iluminación</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="tab-musica" id="t-musica">Música</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="tab-catalogo" id="t-catalogo">Catálogo</button>
             </div>
-            
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="https://ihack.red/" target="_blank" rel="noopener" class="web-project-card">
-                    <div class="web-project">
-                        <i class="fas fa-shield-alt"></i>
-                        <h5>iHack Red</h5>
-                        <p>Ciberseguridad y privacidad</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="https://www.toponenutrition.com/" target="_blank" rel="noopener" class="web-project-card">
-                    <div class="web-project">
-                        <i class="fas fa-dumbbell"></i>
-                        <h5>Top One Nutrition</h5>
-                        <p>Rendimiento y bienestar</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="https://wappy.com.co/" target="_blank" rel="noopener" class="web-project-card">
-                    <div class="web-project">
-                        <i class="fas fa-bullhorn"></i>
-                        <h5>Wappy</h5>
-                        <p>Agencia de publicidad y marketing digital</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="https://turntabledealer.com/" target="_blank" rel="noopener" class="web-project-card">
-                    <div class="web-project">
-                        <i class="fas fa-record-vinyl"></i>
-                        <h5>Turntable Dealer</h5>
-                        <p>Pasión por el vinilo</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Proyectos Arquitectónicos -->
-<section id="proyectos" class="section bg-dark">
-    <div class="container">
-        <h2 class="section-title">Proyectos Arquitectónicos</h2>
-        <p class="section-subtitle">Visualización y representación de espacios arquitectónicos con el más alto nivel de detalle</p>
-        
-        <!-- Video Arquitectónico Principal -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-10">
-                <div class="ratio ratio-16x9" style="border: 1px solid var(--primary-color);">
-                    <iframe src="https://drive.google.com/file/d/1sS4EcSouLakW9DFoSlSfQaAtWJ9blnEe/preview" allowfullscreen loading="lazy" title="Video de arquitectura principal"></iframe>
+            <div class="tab-panel active" id="tab-3d" role="tabpanel" aria-labelledby="t-3d">
+            <div class="gallery-wrap">
+                
+                <div class="gallery" id="g-3d">
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/3d/Greymon.png" data-fancybox="3d" data-caption="Greymon — Modelado y texturizado de personaje inspirado en la serie Digimon (fan art).">
+                            <img src="media/img/3d/Greymon.png" alt="Modelo 3D de Greymon" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Greymon</h5><p>Modelado y texturizado de personaje inspirado en la serie Digimon (fan art).</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/3d/isabelle.png" data-fancybox="3d" data-caption="Isabelle — Recreación 3D del personaje de Animal Crossing (fan art).">
+                            <img src="media/img/3d/isabelle.png" alt="Modelo 3D de Isabelle" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Isabelle</h5><p>Recreación 3D del personaje de Animal Crossing (fan art).</p></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/3d/Metalgreymon house.png" data-fancybox="3d" data-caption="MetalGreymon — Modelado de la forma cibernética de Greymon, enfocado en partes mecánicas (fan art).">
+                            <img src="media/img/3d/Metalgreymon house.png" alt="Modelo 3D de MetalGreymon" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>MetalGreymon</h5><p>Modelado de la forma cibernética de Greymon, enfocado en partes mecánicas (fan art).</p></div>
+                    </article>
                 </div>
+                
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-lg-6 mb-4">
-                <div class="portfolio-card h-100">
-                    <div class="card-img-container">
-                        <img src="media/img/1-Fachada-norte-2023.jpg" class="card-img-top" alt="Fachada Norte" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/1-Fachada-norte-2023.jpg" data-fancybox="gallery-2" data-caption="Fachada Norte" class="btn btn-sm btn-primary">Ampliar</a>
+            <span class="swipe-hint">Desliza para ver más</span>
+            </div>
+            <div class="tab-panel" id="tab-luz" role="tabpanel" aria-labelledby="t-luz">
+                <div class="arch-layout">
+                    <div class="fit-box">
+                        <div class="media-frame">
+                            <button type="button" class="vfacade" data-provider="drive" data-id="1sS4EcSouLakW9DFoSlSfQaAtWJ9blnEe" aria-label="Reproducir: video de proyecto de iluminación"><img src="https://drive.google.com/thumbnail?id=1sS4EcSouLakW9DFoSlSfQaAtWJ9blnEe&amp;sz=w1280" alt="" loading="lazy" onerror="this.remove()"><span class="vplay"><i class="fas fa-play"></i></span></button>
                         </div>
                     </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Fachada Norte</h5>
-                        <p class="card-text">Diseño arquitectónico moderno con enfoque en la integración visual</p>
-                    </div>
+            <div class="gallery-wrap">
+                <button class="g-nav prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery" id="g-arch">
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/1-Fachada-norte-2023.jpg" data-fancybox="arquitectura" data-caption="Fachada Norte — Diseño arquitectónico con enfoque en la integración visual">
+                            <img src="media/img/1-Fachada-norte-2023.jpg" alt="Fachada Norte" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Fachada Norte</h5></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/5-Entrada principal-2023.png" data-fancybox="arquitectura" data-caption="Entrada Principal — Diseño de acceso con elementos contemporáneos">
+                            <img src="media/img/5-Entrada principal-2023.png" alt="Entrada Principal" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Entrada Principal</h5></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/3-Fachada occidental-2023.png" data-fancybox="arquitectura" data-caption="Fachada Occidental — Perspectiva lateral con juego de volúmenes y texturas">
+                            <img src="media/img/3-Fachada occidental-2023.png" alt="Fachada Occidental" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Fachada Occidental</h5></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/2-Entrada 4-2023.png" data-fancybox="arquitectura" data-caption="Entrada Secundaria — Acceso complementario con diseño minimalista">
+                            <img src="media/img/2-Entrada 4-2023.png" alt="Entrada Secundaria" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Entrada Secundaria</h5></div>
+                    </article>
+                    <article class="g-card">
+                        <a class="g-media" href="media/img/4-Fachada Sur j-2023.png" data-fancybox="arquitectura" data-caption="Fachada Sur — Perspectiva posterior con integración al entorno">
+                            <img src="media/img/4-Fachada Sur j-2023.png" alt="Fachada Sur" loading="lazy"><span class="zoom"><i class="fas fa-expand"></i></span>
+                        </a>
+                        <div class="g-cap"><h5>Fachada Sur</h5></div>
+                    </article>
+                </div>
+                <button class="g-nav next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <span class="swipe-hint">Desliza para ver más</span>
                 </div>
             </div>
-            
-            <div class="col-12 col-lg-6">
-                <div class="row">
-                    <div class="col-12 col-sm-6 mb-4">
-                        <div class="portfolio-card">
-                            <div class="card-img-container">
-                                <img src="media/img/5-Entrada principal-2023.png" class="card-img-top" alt="Entrada Principal" loading="lazy">
-                                <div class="card-overlay">
-                                    <a href="media/img/5-Entrada principal-2023.png" data-fancybox="gallery-2" data-caption="Entrada Principal" class="btn btn-sm btn-primary">Ampliar</a>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h5 class="card-title">Entrada Principal</h5>
-                                <p class="card-text">Diseño de acceso con elementos contemporáneos</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 mb-4">
-                        <div class="portfolio-card">
-                            <div class="card-img-container">
-                                <img src="media/img/3-Fachada occidental-2023.png" class="card-img-top" alt="Fachada Occidental" loading="lazy">
-                                <div class="card-overlay">
-                                    <a href="media/img/3-Fachada occidental-2023.png" data-fancybox="gallery-2" data-caption="Fachada Occidental" class="btn btn-sm btn-primary">Ampliar</a>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h5 class="card-title">Fachada Occidental</h5>
-                                <p class="card-text">Perspectiva lateral con juego de volúmenes y texturas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 mb-4">
-                        <div class="portfolio-card">
-                            <div class="card-img-container">
-                                <img src="media/img/2-Entrada 4-2023.png" class="card-img-top" alt="Entrada 4" loading="lazy">
-                                <div class="card-overlay">
-                                    <a href="media/img/2-Entrada 4-2023.png" data-fancybox="gallery-2" data-caption="Entrada 4" class="btn btn-sm btn-primary">Ampliar</a>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h5 class="card-title">Entrada Secundaria</h5>
-                                <p class="card-text">Acceso complementario con diseño minimalista</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 mb-4">
-                        <div class="portfolio-card">
-                            <div class="card-img-container">
-                                <img src="media/img/4-Fachada Sur j-2023.png" class="card-img-top" alt="Fachada Sur" loading="lazy">
-                                <div class="card-overlay">
-                                    <a href="media/img/4-Fachada Sur j-2023.png" data-fancybox="gallery-2" data-caption="Fachada Sur" class="btn btn-sm btn-primary">Ampliar</a>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h5 class="card-title">Fachada Sur</h5>
-                                <p class="card-text">Perspectiva posterior con integración al entorno</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sección 3D -->
-<section id="3d" class="section">
-    <div class="container">
-        <h2 class="section-title">Modelado y Renderizado 3D</h2>
-        <p class="section-subtitle">Exploración de formas, texturas y luces a través de la creación tridimensional.</p>
-        
-        <div class="row justify-content-center center-on-lg">
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                       <img src="media/img/3d/Greymon.png" class="card-img-top" alt="Modelo 3D de Greymon" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/3d/Greymon.png" data-fancybox="gallery-3d" data-caption="Greymon - Modelado de Personaje" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Greymon</h5>
-                        <p class="card-text">Modelado y texturizado de personaje inspirado en la icónica serie Digimon.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/3d/isabelle.png" class="card-img-top" alt="Modelo 3D de Isabelle" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/3d/isabelle.png" data-fancybox="gallery-3d" data-caption="Isabelle - Modelado de Personaje" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Isabelle</h5>
-                        <p class="card-text">Recreación 3D del personaje Isabelle de la saga de videojuegos Animal Crossing.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/3d/Metalgreymon house.png" class="card-img-top" alt="Modelo 3D de MetalGreymon" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/3d/Metalgreymon house.png" data-fancybox="gallery-3d" data-caption="MetalGreymon - Modelado de Personaje" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">MetalGreymon</h5>
-                        <p class="card-text">Modelado detallado de la forma cibernética de Greymon, enfocado en partes mecánicas.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Sección Audiovisual -->
-<section id="audiovisual" class="section">
-    <div class="container">
-        <h2 class="section-title">Portafolio Audiovisual</h2>
-        <p class="section-subtitle">Producciones en video donde combino creatividad, técnica y narrativa visual</p>
-        
-        <div class="row g-4 mt-4">
-            <div class="col-12 col-md-4">
-                <div class="portfolio-card">
-                    <div class="ratio ratio-16x9">
-                        <video src="media/img/nuevos/bep.mp4" class="w-100" controls preload="metadata"></video>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">BEP - Video Corporativo</h5>
-                        <p class="card-text">Producción audiovisual para marca de tecnología</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="portfolio-card">
-                    <div class="ratio ratio-16x9">
-                        <video src="media/img/nuevos/trailer.mp4" class="w-100" controls preload="metadata"></video>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Trailer Cinematográfico</h5>
-                        <p class="card-text">Trailer para proyecto cinematográfico independiente</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="portfolio-card">
-                    <div class="ratio ratio-16x9">
-                        <video src="media/img/nuevos/futbol.mp4" class="w-100" controls preload="metadata"></video>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Cobertura Deportiva</h5>
-                        <p class="card-text">Producción para evento deportivo profesional</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row mt-5">
-            <div class="col-12 col-lg-6 mb-5">
-                <div class="portfolio-card">
-                    <div class="card-content">
-                        <h3 class="mb-4"><i class="fas fa-headphones me-3"></i>Producciones Musicales</h3>
-                        
+            <div class="tab-panel" id="tab-musica" role="tabpanel" aria-labelledby="t-musica">
+                <div class="music-grid">
+                    <div class="music-list">
                         <div class="audio-player">
                             <h4 class="audio-title"><i class="fas fa-music"></i>A-gain</h4>
-                            <audio controls class="w-100">
-                                <source src="media/audio/A-GAIN.mp3" type="audio/mpeg">
-                                Tu navegador no admite la reproducción de audio.
-                            </audio>
+                            <audio controls preload="none"><source src="media/audio/A-GAIN.mp3" type="audio/mpeg">Tu navegador no admite la reproducción de audio.</audio>
                         </div>
-                        
                         <div class="audio-player">
                             <h4 class="audio-title"><i class="fas fa-music"></i>Spherall</h4>
-                            <audio controls class="w-100">
-                                <source src="media/audio/Spherall.mp3" type="audio/mpeg">
-                                Tu navegador no admite la reproducción de audio.
-                            </audio>
+                            <audio controls preload="none"><source src="media/audio/Spherall.mp3" type="audio/mpeg">Tu navegador no admite la reproducción de audio.</audio>
                         </div>
+                    </div>
+                    <div class="music-video">
+                        <div class="media-frame">
+                            <button type="button" class="vfacade" data-provider="youtube" data-id="p7a3X03zruY" aria-label="Reproducir: The Last Torrent, banda sonora"><img src="https://i.ytimg.com/vi/p7a3X03zruY/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="vplay"><i class="fas fa-play"></i></span></button>
+                        </div>
+                        <div class="g-cap"><h5>The Last Torrent</h5><p>Banda sonora original para proyecto cinematográfico</p></div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-12 col-lg-6">
-                <div class="portfolio-card">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/p7a3X03zruY" allowfullscreen loading="lazy" title="The Last Torrent - Banda Sonora"></iframe>
+            <div class="tab-panel" id="tab-catalogo" role="tabpanel" aria-labelledby="t-catalogo">
+                <div class="catalog-box">
+                    <div class="catalog-frame">
+                        <iframe data-src="media/img/nuevos/catalogo2025.pdf#view=FitH" title="Catálogo 2025"></iframe>
                     </div>
-                    <div class="card-content">
-                        <h5 class="card-title">The Last Torrent</h5>
-                        <p class="card-text">Banda sonora original para proyecto cinematográfico</p>
+                    <div class="catalog-actions">
+                        <a href="media/img/nuevos/catalogo2025.pdf" target="_blank" rel="noopener" class="btn btn-outline-light"><i class="fas fa-up-right-from-square me-2"></i>Abrir en pantalla completa</a>
+                    </div>
+                    <div class="catalog-mobile">
+                        <i class="fas fa-book-open"></i>
+                        <p>Catálogo 2025 en PDF</p>
+                        <a href="media/img/nuevos/catalogo2025.pdf" target="_blank" rel="noopener" class="btn btn-primary">Ver catálogo</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Campañas Meta Ads -->
-<section id="metaads" class="section bg-dark">
-    <div class="container">
-        <h2 class="section-title">Campañas Meta Ads</h2>
-        <p class="section-subtitle">Piezas gráficas publicitarias para campañas de Facebook e Instagram</p>
-        
-        <div class="row g-4">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/nuevos/gladiators.png" class="card-img-top" alt="Gladiators" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/nuevos/gladiators.png" data-fancybox="gallery-3" data-caption="Gladiators" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Gladiators</h5>
-                        <p class="card-text">Diseño para equipo deportivo</p>
-                    </div>
-                </div>
+    <!-- 10 · Contacto -->
+    <section id="contacto" class="snap contact">
+        <div class="wrap">
+            <div class="sec-head">
+                <h2 class="section-title">¿Buscas más clientes?</h2>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/nuevos/hypefestival.png" class="card-img-top" alt="Hypefestival" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/nuevos/hypefestival.png" data-fancybox="gallery-3" data-caption="Hypefestival" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Hypefestival</h5>
-                        <p class="card-text">Identidad para festival musical</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/nuevos/parchadoxx.png" class="card-img-top" alt="Parchadoxx" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/nuevos/parchadoxx.png" data-fancybox="gallery-3" data-caption="Parchadoxx" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Parchadoxx</h5>
-                        <p class="card-text">Diseño para marca de ropa urbana</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/nuevos/prototype.png" class="card-img-top" alt="Prototype" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/nuevos/prototype.png" data-fancybox="gallery-3" data-caption="Prototype" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Prototype</h5>
-                        <p class="card-text">Diseño para empresa de tecnología</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/nuevos/rave.png" class="card-img-top" alt="Rave" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/nuevos/rave.png" data-fancybox="gallery-3" data-caption="Rave" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Rave</h5>
-                        <p class="card-text">Diseño para evento de música electrónica</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="portfolio-card">
-                    <div class="card-img-container">
-                        <img src="media/img/nuevos/topnutrion.png" class="card-img-top" alt="Top Nutrition" loading="lazy">
-                        <div class="card-overlay">
-                            <a href="media/img/nuevos/topnutrion.png" data-fancybox="gallery-3" data-caption="Top Nutrition" class="btn btn-sm btn-primary">Ampliar</a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-title">Top Nutrition</h5>
-                        <p class="card-text">Diseño para marca de suplementos</p>
-                    </div>
-                </div>
+            <p class="contact-lead">Si tu empresa necesita alguien que haga la pieza, la página y la campaña, y que mida lo que funciona, hablemos.</p>
+            <div class="contact-grid">
+                <a class="contact-card" href="https://wa.me/573224394883" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i><span class="label">WhatsApp</span><span class="value">+57 322 439 4883</span>
+                </a>
+                <a class="contact-card" href="mailto:jr7julian@gmail.com">
+                    <i class="fas fa-envelope"></i><span class="label">Correo</span><span class="value">jr7julian@gmail.com</span>
+                </a>
+                <a class="contact-card" href="tel:+573224394883">
+                    <i class="fas fa-phone-alt"></i><span class="label">Teléfono</span><span class="value">322 439 4883</span>
+                </a>
+                <a class="contact-card" href="hoja-de-vida.pdf" download>
+                    <i class="fas fa-file-pdf"></i><span class="label">Hoja de vida</span><span class="value">Descargar PDF</span>
+                </a>
             </div>
         </div>
-    </div>
-</section>
+        <footer class="site-footer">
+            <p>© 2026 Julián Steven Rojas Aya · Growth hacker · Bogotá, Colombia</p>
+        </footer>
+    </section>
 
-<!-- Catálogo Interactivo -->
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">Catálogo Interactivo</h2>
-        <p class="section-subtitle">Visualiza directamente el documento en línea, sin necesidad de descargas</p>
-        <div class="catalog-container">
-            <div class="ratio ratio-16x9">
-                <iframe src="media/img/nuevos/catalogo2025.pdf" allowfullscreen loading="lazy" title="Catálogo Interactivo 2025"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
+    <a href="#inicio" class="back-to-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></a>
 
-<!-- Footer -->
-<footer id="contacto">
-    <div class="container text-center">
-        <h3 class="mb-4">Conectemos</h3>
-        <p class="mb-4">Si te ha gustado mi trabajo o tienes una idea en mente, no dudes en contactarme.</p>
-
-        <p class="mb-2">
-            <i class="fas fa-envelope me-2"></i>
-            <a href="mailto:jr7julian@gmail.com" class="footer-link">jr7julian@gmail.com</a>
-            <span class="footer-sep ms-3 me-3">|</span>
-            <i class="fas fa-phone-alt me-2"></i>
-            <a href="tel:+573224394883">322 439 4883</a>
-            <span class="footer-sep ms-3 me-3">|</span>
-            <i class="fab fa-whatsapp me-2"></i>
-            <a href="https://wa.me/573224394883" target="_blank" rel="noopener">WhatsApp</a>
-        </p>
-
-        <p class="mt-4 mb-0">© 2026 Portafolio Multimedia Profesional. Todos los derechos reservados.</p>
-    </div>
-</footer>
-
-<!-- Modal de Contacto -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="contactModalLabel"><i class="fas fa-address-card me-2"></i>Mis Datos</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>¡Gracias por tu interés! Aquí tienes mis datos para que podamos ponernos en contacto.</p>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <i class="fas fa-envelope me-3"></i>
-                        <a href="mailto:jr7julian@gmail.com">jr7julian@gmail.com</a>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fas fa-phone-alt me-3"></i>
-                        <a href="tel:+573224394883">322 439 4883</a>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fab fa-whatsapp me-3"></i>
-                        <a href="https://wa.me/573224394883" target="_blank" rel="noopener">WhatsApp</a>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fas fa-file-pdf me-3"></i>
-                        <a href="hoja-de-vida.pdf" download>Descargar Hoja de Vida</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-    
-    <!-- Botón volver arriba -->
-    <a href="#inicio" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Animaciones de aparición al hacer scroll -->
-    <script>
-        // Aparición general
-        const revealEls = document.querySelectorAll('.web-project, .audio-player, .section-title');
-        const revealObserver = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 }) : null;
-
-        if (revealObserver) {
-            revealEls.forEach(el => {
-                el.classList.add('fade-in');
-                revealObserver.observe(el);
-            });
-        }
-    </script>
-
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    
     <script>
-        // Inicializar Fancybox
-        Fancybox.bind("[data-fancybox]", {
-            Thumbs: {
-                autoStart: true,
-            },
-            Toolbar: {
-                display: {
-                    left: [],
-                    middle: [],
-                    right: ["close"],
+    (function () {
+        // Lightbox
+        if (window.Fancybox) {
+            Fancybox.bind('[data-fancybox]', {
+                Thumbs: { autoStart: true },
+                Toolbar: { display: { left: [], middle: [], right: ['close'] } }
+            });
+        }
+
+        // Partículas
+        if (window.particlesJS) {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 32, density: { enable: true, value_area: 900 } },
+                    color: { value: '#a99cff' },
+                    shape: { type: 'circle' },
+                    opacity: { value: 0.35, random: true },
+                    size: { value: 2, random: true },
+                    line_linked: { enable: true, distance: 150, color: '#a99cff', opacity: 0.12, width: 1 },
+                    move: { enable: true, speed: 0.8, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false }
                 },
-            },
-        });
-        
-        // Configuración de partículas
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 45, density: { enable: true, value_area: 800 } },
-                color: { value: "#6c63ff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5, random: true },
-                size: { value: 3, random: true },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#6c63ff",
-                    opacity: 0.4,
-                    width: 1
+                interactivity: {
+                    detect_on: 'window',
+                    events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: false }, resize: true },
+                    modes: { grab: { distance: 160, line_linked: { opacity: 0.35 } } }
                 },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: "none",
-                    random: true,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false
-                }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: { enable: true, mode: "grab" },
-                    onclick: { enable: true, mode: "push" },
-                    resize: true
-                },
-                modes: {
-                    grab: { distance: 140, line_linked: { opacity: 1 } },
-                    push: { particles_nb: 4 }
-                }
-            },
-            retina_detect: true
-        });
+                retina_detect: true
+            });
+        }
 
-        // Esperar a que el DOM esté completamente cargado
-        document.addEventListener('DOMContentLoaded', function() {
-            // Navbar scroll effect
-            window.addEventListener('scroll', function() {
-                const navbar = document.querySelector('.navbar');
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
-            
-            // Botón volver arriba
-            window.addEventListener('scroll', function() {
-                const backToTop = document.querySelector('.back-to-top');
-                if (window.scrollY > 300) {
-                    backToTop.classList.add('active');
-                } else {
-                    backToTop.classList.remove('active');
-                }
-            });
-            
-            // Smooth scroll para enlaces de navegación
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') {
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
-                        return;
-                    }
-                    
-                    const targetElement = document.getElementById(targetId.slice(1));
-                    if (targetElement) {
-                        const yOffset = -70; // Desplazamiento para la barra de navegación fija
-                        const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
+        const sections = Array.from(document.querySelectorAll('section.snap'));
+        const navLinks = Array.from(document.querySelectorAll('.navbar .nav-link'));
+        const progress = document.getElementById('scrollProgress');
+        const backToTop = document.querySelector('.back-to-top');
+        const navCollapse = document.getElementById('navbarNav');
 
-                        window.scrollTo({top: y, behavior: 'smooth'});
-                    }
-                });
+        // Sección activa en el menú
+        // (Música y Catálogo resaltan su sección "padre" del menú)
+        const parentOf = {};
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach((e) => {
+                if (!e.isIntersecting) return;
+                const id = parentOf[e.target.id] || e.target.id;
+                navLinks.forEach((l) => l.classList.toggle('active-link', l.getAttribute('href') === '#' + id));
             });
-            
-            // Cerrar menú en móvil al hacer clic en un enlace
-            document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
-                link.addEventListener('click', function () {
-                    const navbarNav = document.getElementById('navbarNav');
-                    const collapse = bootstrap.Collapse.getInstance(navbarNav);
-                    if (collapse && navbarNav.classList.contains('show')) {
-                        collapse.hide();
-                    }
-                });
-            });
+        }, { threshold: 0.55 });
+        sections.forEach((s) => spy.observe(s));
 
-            // Resaltar enlace activo según la sección visible (scrollspy)
-            const sections = document.querySelectorAll('section[id], footer[id]');
-            const navLinks = document.querySelectorAll('.navbar .nav-link');
-            window.addEventListener('scroll', function () {
-                const pos = window.scrollY + 110;
-                let current = 'inicio';
-                sections.forEach(section => {
-                    if (section.offsetTop <= pos) {
-                        current = section.id;
-                    }
-                });
-                navLinks.forEach(link => {
-                    link.classList.toggle('active-link', link.getAttribute('href') === '#' + current);
-                });
-            });
+        // Barra de progreso y botón "volver arriba"
+        const onScroll = () => {
+            const doc = document.documentElement;
+            const max = doc.scrollHeight - doc.clientHeight;
+            progress.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + '%';
+            backToTop.classList.toggle('active', doc.scrollTop > window.innerHeight * 0.6);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
 
-            // Barra de progreso de scroll
-            const scrollProgress = document.getElementById('scrollProgress');
-            const updateProgress = function () {
-                const doc = document.documentElement;
-                const scrollable = doc.scrollHeight - doc.clientHeight;
-                const p = scrollable > 0 ? (doc.scrollTop / scrollable) : 0;
-                scrollProgress.style.width = (p * 100) + '%';
+        // Cerrar el menú móvil al elegir una sección
+        navLinks.forEach((link) => link.addEventListener('click', () => {
+            if (navCollapse.classList.contains('show') && window.bootstrap) {
+                bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+            }
+        }));
+
+        // Carruseles: flechas solo cuando hay contenido oculto
+        document.querySelectorAll('.gallery-wrap').forEach((wrap) => {
+            const g = wrap.querySelector('.gallery');
+            const prev = wrap.querySelector('.g-nav.prev');
+            const next = wrap.querySelector('.g-nav.next');
+            const update = () => {
+                const scrollable = g.scrollWidth > g.clientWidth + 4;
+                wrap.classList.toggle('can-scroll', scrollable);
+                const hint = wrap.parentElement.querySelector('.swipe-hint');
+                if (hint) hint.style.visibility = scrollable ? 'visible' : 'hidden';
+                if (prev) prev.disabled = g.scrollLeft <= 2;
+                if (next) next.disabled = g.scrollLeft >= g.scrollWidth - g.clientWidth - 2;
             };
-            window.addEventListener('scroll', updateProgress);
-            updateProgress();
+            const step = () => (g.firstElementChild ? g.firstElementChild.getBoundingClientRect().width + 14 : g.clientWidth);
+            if (prev) prev.addEventListener('click', () => g.scrollBy({ left: -step(), behavior: 'smooth' }));
+            if (next) next.addEventListener('click', () => g.scrollBy({ left: step(), behavior: 'smooth' }));
+            g.addEventListener('scroll', update, { passive: true });
+            window.addEventListener('resize', update);
+            if ('ResizeObserver' in window) new ResizeObserver(update).observe(g);
+            update();
         });
-        
-   
+
+        // Rueda del mouse / trackpad: un gesto = una sección
+        const pageMode = () => matchMedia('(min-height: 501px) and (pointer: fine)').matches;
+        let lockedUntil = 0, acc = 0, accTimer = null;
+        const canScrollInside = (el, down) => {
+            while (el && el !== document.body && el !== document.documentElement) {
+                const oy = getComputedStyle(el).overflowY;
+                if ((oy === 'auto' || oy === 'scroll') && el.scrollHeight > el.clientHeight + 2) {
+                    if (down ? el.scrollTop + el.clientHeight < el.scrollHeight - 2 : el.scrollTop > 2) return true;
+                }
+                el = el.parentElement;
+            }
+            return false;
+        };
+        const currentIndex = () => {
+            let best = 0, dist = Infinity;
+            sections.forEach((s, i) => { const d = Math.abs(s.offsetTop - window.scrollY); if (d < dist) { dist = d; best = i; } });
+            return best;
+        };
+        window.addEventListener('wheel', (e) => {
+            if (!pageMode() || e.ctrlKey) return;
+            if (document.querySelector('.fancybox__container')) return;
+            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+            if (canScrollInside(e.target, e.deltaY > 0)) return;
+            e.preventDefault();
+            const now = performance.now();
+            if (now < lockedUntil) { lockedUntil = Math.max(lockedUntil, now + 160); return; }
+            acc += e.deltaY;
+            clearTimeout(accTimer);
+            accTimer = setTimeout(() => { acc = 0; }, 200);
+            if (Math.abs(acc) < 20) return;
+            const target = sections[currentIndex() + (acc > 0 ? 1 : -1)];
+            acc = 0;
+            if (!target) return;
+            lockedUntil = now + 750;
+            window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+        }, { passive: false });
+
+        // Videos externos (Drive / YouTube): miniatura + botón; el reproductor se carga al hacer clic.
+        // Abierto como archivo local (file://) YouTube y Drive rechazan el reproductor, así que se abre en una pestaña.
+        document.querySelectorAll('.vfacade').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const id = btn.dataset.id, yt = btn.dataset.provider === 'youtube';
+                const watchUrl = yt ? 'https://www.youtube.com/watch?v=' + id : 'https://drive.google.com/file/d/' + id + '/view';
+                if (location.protocol === 'file:') { window.open(watchUrl, '_blank', 'noopener'); return; }
+                const f = document.createElement('iframe');
+                f.src = yt ? 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1'
+                           : 'https://drive.google.com/file/d/' + id + '/preview';
+                f.title = btn.getAttribute('aria-label').replace('Reproducir: ', '');
+                f.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+                f.allowFullscreen = true;
+                f.referrerPolicy = 'strict-origin-when-cross-origin';
+                btn.replaceWith(f);
+            });
+        });
+
+        // Pestañas de "Exploración creativa"
+        const tabs = Array.from(document.querySelectorAll('.tab'));
+        const activateTab = (tab) => {
+            tabs.forEach((t) => { const on = t === tab; t.classList.toggle('active', on); t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
+                document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on); });
+            document.querySelectorAll('#exploracion video, #exploracion audio').forEach((m) => m.pause());
+            const frame = document.querySelector('.catalog-frame iframe');
+            if (tab.id === 't-catalogo' && frame && !frame.src && getComputedStyle(frame.parentElement).display !== 'none') frame.src = frame.dataset.src;
+            window.dispatchEvent(new Event('resize'));
+        };
+        tabs.forEach((t, i) => {
+            t.addEventListener('click', () => activateTab(t));
+            t.addEventListener('keydown', (e) => {
+                if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+                const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length]; n.focus(); activateTab(n);
+            });
+        });
+
+        // Pausar videos al salir de su sección
+        const vidObs = new IntersectionObserver((entries) => {
+            entries.forEach((e) => { if (!e.isIntersecting) e.target.querySelectorAll('video, audio').forEach((m) => m.pause()); });
+        }, { threshold: 0 });
+        sections.forEach((s) => vidObs.observe(s));
+    })();
     </script>
 </body>
 </html>
