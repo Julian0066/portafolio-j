@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20261101">
+    <link rel="stylesheet" href="style.css?v=20261101b">
 </head>
 <body>
     <div class="scanlines-overlay" aria-hidden="true"></div>
@@ -54,9 +54,9 @@
     <section id="inicio" class="snap hero" data-label="Inicio">
         <div class="wrap">
             <div class="hero-text">
-                <span class="hero-kicker">Creatividad &amp; innovación digital</span>
-                <h1 class="hero-title">Crecimiento digital con creatividad y datos.</h1>
-                <p class="hero-subtitle">Growth hacking y producción multimedia: diseño gráfico, 3D, audiovisual, campañas en Meta Ads y desarrollo web orientados a resultados comerciales.</p>
+                <span class="hero-kicker"><span class="hero-status" aria-hidden="true"></span>Julián Rojas · Bogotá, Colombia</span>
+                <h1 class="hero-title">Growth hacker y productor multimedia.</h1>
+                <p class="hero-subtitle">Crecimiento digital con creatividad y datos: diseño gráfico, 3D, audiovisual, campañas en Meta Ads y desarrollo web orientados a resultados comerciales.</p>
             </div>
             <div class="hero-media">
                 <div class="media-frame">
@@ -64,10 +64,9 @@
                 </div>
             </div>
             <div class="hero-cta">
-                <a href="#metaads" class="btn btn-primary">Ver trabajos</a>
-                <a href="hoja-de-vida.pdf" download class="btn btn-outline-light"><i class="fas fa-download me-2"></i>Descargar hoja de vida</a>
-                <a href="#contacto" class="btn btn-outline-light">Contactar</a>
-                <p class="hero-proof">Experiencia en iHack, Wappy y ColorLeds</p>
+                <a href="#metaads" class="btn btn-primary">Ver trabajos <i class="fas fa-arrow-down ms-2"></i></a>
+                <a href="hoja-de-vida.pdf" download class="btn btn-outline-light"><i class="fas fa-download me-2"></i>Hoja de vida</a>
+                <div class="hero-proof"><span class="proof-label">Experiencia en</span><ul class="proof-list"><li>iHack</li><li>Wappy</li><li>ColorLeds</li></ul></div>
             </div>
         </div>
         <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>GROWTH HACKING&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>EXPERIENCIAS INTERACTIVAS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>GROWTH HACKING&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DISEÑO GRÁFICO&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>MODELADO 3D&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>PRODUCCIÓN AUDIOVISUAL&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>CAMPAÑAS META ADS&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>DESARROLLO WEB&nbsp;&nbsp;◆&nbsp;&nbsp;</span><span>EXPERIENCIAS INTERACTIVAS&nbsp;&nbsp;◆&nbsp;&nbsp;</span></div></div>
@@ -594,6 +593,17 @@
             });
         }, { threshold: 0.55 });
         sections.forEach((s) => spy.observe(s));
+        // Respaldo: marca la sección más cercana al hacer scroll (en el inicio no se marca ninguna)
+        let spyRaf = 0;
+        window.addEventListener('scroll', () => {
+            cancelAnimationFrame(spyRaf);
+            spyRaf = requestAnimationFrame(() => {
+                const cur = sections.find((s) => Math.abs(s.getBoundingClientRect().top) < window.innerHeight / 2);
+                if (!cur) return;
+                const id = parentOf[cur.id] || cur.id;
+                navLinks.forEach((l) => l.classList.toggle('active-link', l.getAttribute('href') === '#' + id));
+            });
+        }, { passive: true });
 
         // Barra de progreso y botón "volver arriba"
         const onScroll = () => {
