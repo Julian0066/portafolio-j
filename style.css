@@ -1196,3 +1196,65 @@ html { scrollbar-color: #ffffff #05050a; }
 .back-to-top { background: #ffffff; color: #6e0bca; border: 0; }
 .back-to-top:hover { background: #6200ff; color: #05050a; }
 a:focus-visible, button:focus-visible { outline-color: #6c63ff; }
+
+/* =========================================================
+   Secciones de texto fusionadas (Sobre mí + Cómo trabajo, Casos + Experiencia)
+   ========================================================= */
+.merged { display: flex; flex-direction: column; gap: clamp(14px, 3vh, 30px); min-height: 0; }
+.merged .about-grid { flex: none; }
+.block-sub { display: block; margin-top: 3px; font-family: 'Montserrat', sans-serif; font-size: clamp(0.72rem, 1.5vh, 0.82rem); text-transform: none; letter-spacing: 0; color: rgba(248, 249, 250, 0.65); font-weight: 400; }
+.merged-block .block-title { margin-top: 0; margin-bottom: clamp(8px, 1.6vh, 14px); }
+
+/* Pasos compactos en una franja */
+.steps-compact { gap: clamp(8px, 1.4vw, 14px); }
+.steps-compact .step { padding: clamp(10px, 1.8vh, 16px) clamp(10px, 1.2vw, 16px); gap: 4px; }
+.steps-compact .step h3 { font-size: clamp(0.95rem, 2.2vh, 1.15rem); }
+.steps-compact .step p { font-size: clamp(0.72rem, 1.6vh, 0.84rem); line-height: 1.45; }
+.steps-compact .step-tools { font-size: clamp(0.66rem, 1.4vh, 0.74rem); padding-top: 6px; }
+
+/* Casos compactos */
+.merged .cases .case { padding: clamp(10px, 2vh, 18px) clamp(12px, 1.4vw, 18px); gap: clamp(4px, 0.8vh, 8px); }
+.merged .case h3 { font-size: clamp(0.88rem, 2vh, 1.05rem); }
+.merged .case ul { font-size: clamp(0.72rem, 1.55vh, 0.84rem); line-height: 1.4; }
+.merged .case li { margin-bottom: 2px; }
+.merged .case-foot { padding-top: 6px; }
+.merged .about-grid .timeline li { padding-top: clamp(3px, 0.7vh, 7px); padding-bottom: clamp(3px, 0.7vh, 7px); }
+
+/* Si en una pantalla muy baja no cabe todo, la sección se desplaza por dentro sin cortar nada */
+#sobre-mi .wrap, #experiencia .wrap { overflow-y: auto; justify-content: flex-start; scrollbar-width: thin; }
+#sobre-mi .wrap > :first-child, #experiencia .wrap > :first-child { margin-top: auto; }
+#sobre-mi .wrap > :last-child, #experiencia .wrap > :last-child { margin-bottom: auto; }
+
+@media (max-width: 767.98px) {
+    .merged { gap: 12px; }
+    .steps-compact { grid-template-columns: repeat(2, 1fr); }
+    .steps-compact .step p { font-size: 0.7rem; }
+    .merged .cases { grid-auto-columns: 82vw; }
+}
+
+/* Experiencia y casos: línea de tiempo horizontal + herramientas en dos columnas */
+#experiencia .about-grid { grid-template-columns: 1fr; gap: clamp(10px, 2vh, 18px); align-items: start; }
+#experiencia .about-exp { order: -1; }
+#experiencia .timeline { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; border-left: 0; border-top: 1px solid #ffffff; }
+#experiencia .timeline li { padding: 12px 0 0 0; }
+#experiencia .timeline li::before { left: 0; top: -5px; }
+#experiencia .tl-role { font-size: clamp(0.78rem, 1.7vh, 0.92rem); }
+#experiencia .edu-line { margin-top: 8px; }
+#experiencia .stack { grid-template-columns: max-content 1fr max-content 1fr; gap: 4px 14px; font-size: clamp(0.74rem, 1.6vh, 0.86rem); }
+#experiencia .about-text .block-title { margin: 0 0 8px; }
+@media (max-width: 991.98px) {
+    #experiencia .timeline { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 14px; }
+}
+@media (max-width: 767.98px) {
+    #experiencia .timeline { display: block; border-top: 0; border-left: 1px solid #ffffff; }
+    #experiencia .timeline li { padding: 3px 0 3px 16px; }
+    #experiencia .timeline li::before { left: -5px; top: 9px; }
+    #experiencia .stack { grid-template-columns: 1fr; }
+}
+@media (min-width: 992px) and (max-width: 1199.98px), (min-width: 992px) and (max-height: 780px) {
+    .merged { gap: 12px; }
+    .merged .case ul { font-size: 0.72rem; }
+    .merged .case h3 { font-size: 0.88rem; }
+    #experiencia .edu-line { display: inline-block; margin-top: 4px; }
+}
+#experiencia .about-exp { padding-top: clamp(8px, 1.6vh, 14px); }
