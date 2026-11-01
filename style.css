@@ -1409,3 +1409,12 @@ a:focus-visible, button:focus-visible { outline-color: #6c63ff; }
     .hero-proof { justify-content: center; gap: 6px; }
     .proof-list li { padding: 3px 8px; font-size: 0.75rem; }
 }
+
+/* LinkedIn: botón de ícono en el hero y quinta tarjeta de contacto */
+.hero-cta .btn-icon { padding-left: 0; padding-right: 0; width: 48px; align-self: stretch; display: inline-flex; align-items: center; justify-content: center; }
+.hero-cta .btn-icon i { font-size: 1.05rem; }
+@media (min-width: 768px) { .contact-grid { grid-template-columns: repeat(5, 1fr); } }
+@media (max-width: 767.98px) {
+    .hero-cta .btn-icon { display: none; }
+    .contact-grid > .contact-card:last-child { grid-column: 1 / -1; }
+}
