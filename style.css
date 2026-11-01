@@ -1258,3 +1258,38 @@ a:focus-visible, button:focus-visible { outline-color: #6c63ff; }
     #experiencia .edu-line { display: inline-block; margin-top: 4px; }
 }
 #experiencia .about-exp { padding-top: clamp(8px, 1.6vh, 14px); }
+
+/* =========================================================
+   Portafolio Audiovisual: videos más grandes
+   Uno destacado a la izquierda y dos apilados a la derecha,
+   calculados con el espacio real disponible (nunca se desbordan).
+   ========================================================= */
+#audiovisual .wrap { max-width: 1600px; }
+@media (min-width: 992px) {
+    #g-video {
+        --gap: 14px;
+        --cap: 62px;
+        --bw: min(calc((100cqw - var(--gap)) * 0.64), calc((100cqh - var(--cap) - 4px) * 16 / 9));
+        --bh: calc(var(--bw) * 9 / 16);
+        --sh: calc((var(--bh) + var(--cap) - var(--gap)) / 2 - var(--cap));
+        --sw: calc(var(--sh) * 16 / 9);
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: var(--bw) var(--sw);
+        grid-template-rows: auto auto;
+        grid-auto-columns: auto;
+        gap: var(--gap);
+        width: max-content;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        overflow: visible;
+        padding: 0;
+        align-content: center;
+    }
+    #g-video > .g-card:first-child { grid-row: 1 / span 2; }
+    #g-video > .g-card:first-child .g-media { height: var(--bh); }
+    #g-video > .g-card:not(:first-child) .g-media { height: var(--sh); }
+    #audiovisual .gallery-wrap { display: flex; align-items: center; }
+    #audiovisual .g-nav { display: none !important; }
+}
