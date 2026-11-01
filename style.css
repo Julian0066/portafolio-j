@@ -1362,3 +1362,50 @@ a:focus-visible, button:focus-visible { outline-color: #6c63ff; }
     .wp-info { padding: 5px 8px; }
     .wp-info h5 { font-size: 0.74rem; }
 }
+
+/* =========================================================
+   Hero: nombre visible, dos acciones claras y prueba social
+   ========================================================= */
+.hero-kicker {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.hero-status {
+    width: 8px; height: 8px; flex: none;
+    background: #39ff88;
+    box-shadow: 0 0 8px rgba(57, 255, 136, 0.8);
+    animation: hero-blink 2s ease-in-out infinite;
+}
+@keyframes hero-blink { 50% { opacity: 0.35; } }
+.hero-cta .btn { padding-left: clamp(16px, 1.6vw, 26px); padding-right: clamp(16px, 1.6vw, 26px); }
+.hero-proof {
+    flex-basis: 100%;
+    display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
+    margin-top: clamp(6px, 1.4vh, 14px);
+    color: rgba(248, 249, 250, 0.6);
+}
+.proof-label {
+    font-family: 'Share Tech Mono', ui-monospace, monospace;
+    font-size: clamp(0.72rem, 1.5vh, 0.85rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.proof-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.proof-list li {
+    font-family: 'Share Tech Mono', ui-monospace, monospace;
+    font-size: clamp(0.8rem, 1.7vh, 0.95rem);
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 4px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.04);
+}
+@media (max-width: 767.98px) {
+    .hero-kicker { font-size: 0.7rem; letter-spacing: 2px; }
+    .hero-cta { grid-template-columns: 1fr 1fr; }
+    .hero-cta .btn-primary { grid-column: auto; }
+    .hero-proof { justify-content: center; gap: 6px; }
+    .proof-list li { padding: 3px 8px; font-size: 0.75rem; }
+}
